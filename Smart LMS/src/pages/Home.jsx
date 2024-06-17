@@ -1,5 +1,6 @@
 import React from "react"
+import RightSidebar from "../home-components/RightSidebar/RightSidebar"
 
 export default function Home(){
-    return <div>Home</div>
+    return <div><RightSidebar/></div>
 }
