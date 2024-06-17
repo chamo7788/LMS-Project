@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./RightSidebar.css";
+import "../../../assets/css/home/RightSidebar.css";
 
 export default function RightSidebarItems({ item }) {
   const [open, setOpen] = useState(false);
