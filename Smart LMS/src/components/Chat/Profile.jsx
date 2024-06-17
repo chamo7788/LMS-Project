@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../assets/css/Chat/profile.css";
+import "../../assets/css/Chat/profile.css";
 import Avatar from "./Avatar";
 
 export default function Profile({ open, setOpen }) {
