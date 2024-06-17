@@ -1,5 +1,5 @@
 import React from "react"
-import RightSidebar from "../home-components/RightSidebar/RightSidebar"
+import RightSidebar from "../components/home/RightSidebar/RightSidebar"
 
 export default function Home(){
     return <div><RightSidebar/></div>
