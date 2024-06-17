@@ -1,6 +1,6 @@
-import "./RightSidebar.css";
+import "../../../assets/css/home/RightSidebar.css";
 import RightSidebarItems from "./RightsidebarItems";
-import items from "./RightSidebarData.json";
+import items from "../../../data/RightSidebarData.json";
 
 export function RightSidebar() {
   return (
