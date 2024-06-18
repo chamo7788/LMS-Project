@@ -1,15 +1,47 @@
 .rightsidebar{
     position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    right: -250px;
+    top: 30px;
+    bottom: 73px;
     width: 300px;
     background-color: #202763;
     color: var(--white);
+    transition: right 0.3s;
+    padding-top: 60px;
+    overflow-y: auto;
+}
+
+.rightsidebar.pinned {
+    right: 0; /* Adjust as needed */
+}
+
+.pin-button {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    background-color: #202763;
+    
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 2em;
+    transition: left 0.3s;
+    border-bottom: 1px solid #fff;
+    z-index: 5;
+    transition: background-color .20s;
+}
+
+.pin-button:hover{
+    background-color: rgba(255, 255, 255, .1);
 }
 
 .rightsidebar-Items{
-    padding: .75em 1em;
+    position: relative;
+    height: auto;
+    top: 5px;
+    padding: 1em 1em;
     display: block;
     transition: background-color .20s;
     cursor: pointer;
@@ -57,6 +89,12 @@
 .web-support{
     position: fixed;
     bottom: 0;
-    font-size: 1em;
+    height: 73px;
+    width: 300px;
+    font-size: .8em;
     padding: 2em;
+    border-top: .5px solid #fff;
+    z-index: 10;
+    background-color: #202763;
+    padding-left: 5em;
 }
