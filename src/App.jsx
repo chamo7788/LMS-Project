@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Messenger from "./pages/Messenger";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Courses from "./pages/Courses";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="/messenger" element={<Messenger />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/course" element={<Courses />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
