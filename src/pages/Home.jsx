@@ -1,9 +1,11 @@
 import React from "react";
-import { LeftSideBar, RightSidebar } from "../components";
+import { Navbar, LeftSideBar, RightSidebar } from "../components";
+
 
 export default function Home() {
   return (
     <div>
+      <Navbar/>
       <RightSidebar />
       <LeftSideBar />
     </div>
