@@ -5,7 +5,7 @@ import ChatItem from "./ChatItem";
 import ContactItem from "./ContactItem";
 import Profile from "./Profile";
 
-export default function Sidebar({ setChat }) {
+export function Sidebar({ setChat }) {
   const [newChat, setNewChat] = useState(false);
   const [onProfile, setOnProfile] = useState(false);
 

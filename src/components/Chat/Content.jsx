@@ -6,7 +6,7 @@ import { SeedMessages } from "../../data/Messages";
 import ImageSlider from "./ImageSlider";
 import InfoContainer from "./InfoContainer";
 
-export default function Content({ chat, setChat }) {
+export function Content({ chat, setChat }) {
   const [onMenu, setOnMenu] = useState(false);
   const [onViewer, setOnViewer] = useState(false);
   const [messages, setMessages] = useState(SeedMessages);

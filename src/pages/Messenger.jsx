@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "../assets/css/Chat/messenger.css";
-import Content from "../components/Chat/Content";
-import Sidebar from "../components/Chat/Sidebar";
+import { Content, Sidebar } from "../components";
 
 export default function Messenger() {
   const [chat, setChat] = useState(false);
