@@ -11,12 +11,12 @@
   
   /* Navbar Container */
   .navbar {
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background: rgb(173, 34, 34);
+    background: var(--bluenav);
     padding: 15px 7%;
-    position: sticky;
     top: 0;
     font-weight: bolder;
     z-index: 1000; 
