@@ -1,2 +1,4 @@
-export * from './RightSidebar'
-export * from './LeftSidebar'
+export * from './RightSidebar';
+export * from './LeftSidebar';
+export * from './Navbar';
+export * from './Post';
