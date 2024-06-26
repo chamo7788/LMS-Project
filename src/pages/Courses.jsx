@@ -1,11 +1,11 @@
 import React from "react";
-import { CenterComponent, CoursesSideBar  } from "../components";
+import { CenterComponent, CoursesDetails  } from "../components";
 
 export default function Courses(){
     return (
         <div>
             <CenterComponent/>
-            <CoursesSideBar/>
+            <CoursesDetails/>
         </div>
         
     );

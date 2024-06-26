@@ -1,2 +1,2 @@
-export * from './CoursesSideBar';
+export * from './CoursesDetails';
 export * from './CentersComponent';
