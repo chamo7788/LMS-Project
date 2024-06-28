@@ -25,7 +25,8 @@
   
   /* Logo Styling */
   .logo {
-    width: 160px;
+    margin-left: -25%;
+    width: 210px;
     cursor: pointer;
   }
   
@@ -58,7 +59,7 @@
     color:white;
     background-color: black;
   }
-  .navbar__menu-link:active {
+  .navbar__menu-link.active {
     box-shadow: rgb(26, 26, 26) 0 30px 30px -20px;
     color:white;
     background-color: black;
@@ -91,7 +92,7 @@
   .navbar__searchbox {
     display: flex;
     align-items: center;
-    background: black;
+    background: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 50px;
   }
@@ -101,13 +102,13 @@
     background: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: rgb(59, 58, 58);
     font-size: 18px;
     max-width: 200px;
   }
   
   .navbar__searchbox input::placeholder {
-    color: white;
+    color: rgb(25, 24, 24);
   }
   
   .navbar__searchbox .searchimage {
