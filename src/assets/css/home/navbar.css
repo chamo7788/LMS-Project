@@ -49,7 +49,7 @@
     text-decoration: none;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    color: #3e3d3d;
+    color: #242323;
     transition: color 0.3s, box-shadow 0.3s;
   }
   
@@ -77,7 +77,7 @@
   
   .navbar__message-icon {
     font-size: 24px;
-    color: #3e3d3d;
+    color: #242323;
     cursor: pointer;
     transition: color 0.3s;
     margin-left: auto;
@@ -110,11 +110,11 @@
     color: white;
   }
   
-  .navbar__searchbox .searchimage {
+  .navbar__searchbox img {
     width: 20px;
     cursor: pointer;
-    color: #fff;
   }
+  
   
   /* Login Button Styling */
   .navbar__login {
@@ -130,7 +130,7 @@
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.1s;
   }
   
   .navbar__login-button:hover {
@@ -145,7 +145,7 @@
   
   .navbar__message-icon {
     font-size: 50px;
-    color: #363636;
+    color: #242323;
     cursor: pointer;
     transition: color 0.3s;
     align-self: flex-end;
@@ -167,10 +167,12 @@
   }
   
   /* Mobile Menu */
-  @media (max-width: 768px) {
+  @media only screen and  (max-width: 1024px) {
     .navbar {
       flex-direction: column;
       align-items: flex-start;
+      padding: 15px 5%;
+      transition: 1s;
     }
   
     .navbar__menu {
@@ -210,24 +212,5 @@
     }
   }
   
-  /* Extra Styles */
-  .container {
-    width: 100vw;
-    min-height: 100vh;
-    background-color: rgb(180, 227, 250);
-  }
   
-  .navbar::before {
-    content: "";
-    position: absolute;
-    transform: translateX(-50px);
-    visibility: hidden;
-  }
   
-  .navbar:hover::before,
-  .navbar:active::before {
-    width: 100%;
-    visibility: visible;
-    border-radius: 50px;
-    background-color: #000;
-  }
