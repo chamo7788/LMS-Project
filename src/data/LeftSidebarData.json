@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Home",
+        "icon": "bi-house-fill",
+        "link": "/"
+    },
+    {
+        "title": "Profile",
+        "icon": "bi-person-fill",
+        "link": ""
+    },
+    {
+        "title": "Courses",
+        "icon": "bi bi-book-half",
+        "link": "/course"
+    },
+    {
+        "title": "Leader board",
+        "icon": "bi bi-bookmark-star",
+        "link": ""
+    },
+    {
+        "title": "Messenger",
+        "icon": "bi bi-chat-left-text-fill",
+        "link": "/messenger"
+    },
+    {
+        "title": "About us",
+        "icon": "bi bi-info-circle-fill",
+        "link": ""
+    }
+]
