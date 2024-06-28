@@ -2,7 +2,7 @@
     {
         "title": "Home",
         "icon": "bi-house-fill",
-        "link": ""
+        "link": "/"
     },
     {
         "title": "Profile",
@@ -11,22 +11,22 @@
     },
     {
         "title": "Courses",
-        "icon": "bi-house-fill",
-        "link": ""
+        "icon": "bi bi-book-half",
+        "link": "/course"
     },
     {
         "title": "Leader board",
-        "icon": "bi-house-fill",
+        "icon": "bi bi-bookmark-star",
         "link": ""
     },
     {
         "title": "Messenger",
-        "icon": "bi-house-fill",
-        "link": ""
+        "icon": "bi bi-chat-left-text-fill",
+        "link": "/messenger"
     },
     {
         "title": "About us",
-        "icon": "bi-house-fill",
+        "icon": "bi bi-info-circle-fill",
         "link": ""
     }
 ]
