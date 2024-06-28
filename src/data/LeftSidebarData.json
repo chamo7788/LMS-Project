@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Home",
+        "icon": "bi-house-fill",
+        "link": ""
+    },
+    {
+        "title": "Profile",
+        "icon": "bi-person-fill",
+        "link": ""
+    },
+    {
+        "title": "Courses",
+        "icon": "bi-house-fill",
+        "link": ""
+    },
+    {
+        "title": "Leader board",
+        "icon": "bi-house-fill",
+        "link": ""
+    },
+    {
+        "title": "Messenger",
+        "icon": "bi-house-fill",
+        "link": ""
+    },
+    {
+        "title": "About us",
+        "icon": "bi-house-fill",
+        "link": ""
+    }
+]

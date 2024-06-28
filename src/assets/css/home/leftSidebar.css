@@ -1,0 +1,25 @@
+.main_sidebar {
+    position: fixed;
+    background-color: var(--blue);
+    top: 83px;
+    bottom: 0;
+    width: 22em;
+    color: var(--white);
+}
+
+.list{
+    font-size: 1.5em;
+    cursor: pointer;
+    position: relative;
+    height: auto;
+    top: 5px;
+    padding: 1em 1em;
+    display: block;
+    transition: background-color .20s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.list:hover{
+    background-color: rgba(255, 255, 255, .1);
+}
