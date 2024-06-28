@@ -1,14 +1,21 @@
 import React from "react";
 import {
-  Navbar
+  Navbar,
+  LeftSideBar,
+  RightSidebar,
+  Post,
+  AddPost,
 } from "../components";
-import { Homepage } from "../components/home/Homepage";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
-      <Homepage/>
+      <AddPost />
+      <Post />
+      <Post />
+      <RightSidebar />
+      <LeftSideBar />
     </div>
   );
 }

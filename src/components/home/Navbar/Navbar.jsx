@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import '../../../assets/css/home/navbar.css'
 import logoLight from '../../../assets/images/logo-black.png'
-import searchIcon from '../../../assets/images/search-w .png'
 import { FaBars, FaTimes, FaEnvelope } from 'react-icons/fa';
 
 export function Navbar(){
@@ -29,9 +28,9 @@ export function Navbar(){
         <li className='navbar__menu-item'><Link to="/4" onClick={toggleMobileMenu} className='navbar__menu-link'>Contact</Link></li>
       </ul>
       <div className='navbar__searchbox'>
-          <input type="text" placeholder='Search' />
-          <img src={searchIcon} alt="Search" />
-        </div>
+        <input type="text" placeholder='Search' />
+        <i className="fa-solid fa-magnifying-glass"></i>
+      </div>
       <div className='navbar__login'>
       <Link to="/login">
         <button className='navbar__login-button'>Login</button>
