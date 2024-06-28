@@ -255,6 +255,7 @@ h2 {
 /* Mobile */
 
 @media (max-width: 768px) {
+    
     .container {
         margin-left: 0%;
     }
