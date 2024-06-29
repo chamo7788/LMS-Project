@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../assets/css/Course/CoursesDetails.css";
-import { Navbar } from "../home";
+import { LeftSideBar, Navbar } from "../home";
 import courseDetails from "../../data/courseDetails.json";
 
 export function CoursesDetails() {
@@ -17,6 +17,7 @@ export function CoursesDetails() {
     return (
         <div>
             <Navbar />
+            <LeftSideBar/>
             <div className="container">
                 <div className="image-container">
                     <img src=""></img>
