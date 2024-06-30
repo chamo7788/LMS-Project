@@ -1,0 +1,78 @@
+[
+    {
+        "image": "courseImage1.png",
+        "title": "Google AI Essentials",
+        "instructor": "Google",
+        "subtitle": "Beginner · Course",
+        "subject": "Artificial Intelligence"
+    },
+    {
+        "image": "courseImage2.png",
+        "title": "Python for Everybody",
+        "instructor": "University of Michigan",
+        "subtitle": "Beginner · Specialization",
+        "subject": "Programming"
+    },
+    {
+        "image": "courseImage3.png",
+        "title": "Prompt Engineering",
+        "instructor": "Vanderbilt University",
+        "subtitle": "Beginner · Specialization",
+        "subject": "Artificial Intelligence"
+    },
+    {
+        "image": "courseImage4.png",
+        "title": "IBM Data Science",
+        "instructor": "IBM",
+        "subtitle": "Beginner · Professional Certificate",
+        "subject": "Data Science"
+    },
+    {
+        "image": "courseImage1.png",
+        "title": "Google AI Essentials",
+        "instructor": "Google",
+        "subtitle": "Beginner · Course"
+    },
+    {
+        "image": "courseImage2.png",
+        "title": "Python for Everybody",
+        "instructor": "University of Michigan",
+        "subtitle": "Beginner · Specialization"
+    },
+    {
+        "image": "courseImage3.png",
+        "title": "Prompt Engineering",
+        "instructor": "Vanderbilt University",
+        "subtitle": "Beginner · Specialization"
+    },
+    {
+        "image": "courseImage4.png",
+        "title": "IBM Data Science",
+        "instructor": "IBM",
+        "subtitle": "Beginner · Professional"
+    },{
+        "image": "courseImage1.png",
+        "title": "Google AI Essentials",
+        "instructor": "Google",
+        "subtitle": "Beginner · Course"
+    },
+    {
+        "image": "courseImage2.png",
+        "title": "Python for Everybody",
+        "instructor": "University of Michigan",
+        "subtitle": "Beginner · Specialization"
+    },
+    {
+        "image": "courseImage3.png",
+        "title": "Prompt Engineering",
+        "instructor": "Vanderbilt University",
+        "subtitle": "Beginner · Specialization"
+    },
+    {
+        "image": "courseImage4.png",
+        "title": "IBM Data Science",
+        "instructor": "IBM",
+        "subtitle": "Beginner · Professional"
+    }
+
+]

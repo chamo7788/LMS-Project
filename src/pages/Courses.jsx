@@ -1,11 +1,12 @@
 import React from "react";
-import { CenterComponent, CoursesDetails  } from "../components";
+import { AllCourses, CenterComponent, CourseCard, CoursesDetails, LeftSideBar, Navbar  } from "../components";
 
 export default function Courses(){
     return (
         <div>
-            <CenterComponent/>
-            <CoursesDetails/>
+            <Navbar/>
+            <LeftSideBar/>
+            <AllCourses/>
         </div>
         
     );
