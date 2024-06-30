@@ -19,7 +19,6 @@ export default function App() {
         <Route path="/course" element={<Courses />} />
         <Route path="/dashBoard" element={<DashBoard />} />
         <Route path="*" element={<Navigate to="/" replace />} />
-        {/* <Route path="/dashBoard" element={<DashBoard />} /> */}
       </Routes>
     </BrowserRouter>
   );
