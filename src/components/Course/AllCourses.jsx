@@ -1,13 +1,12 @@
 import React from "react";
 import "../../assets/css/Course/allCourses.css";
+import { CourseCard } from "./CourseCard";
  
 export function AllCourses(){
     return (
 
-        <div className="all-course-containter">
-            <div className="">
-
-            </div>
+        <div>
+            <CourseCard/>
 
         </div>
     );
