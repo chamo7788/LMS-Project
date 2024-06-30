@@ -1,0 +1,13 @@
+.photoGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+  
+  .postPhoto {
+    width: calc(45% - 10px);
+    height: auto;
+    border-radius: 10px;
+  }

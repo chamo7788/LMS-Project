@@ -10,8 +10,8 @@
 .post{
     font-family: sans-serif;
     margin: 30px 0;
-    margin-left: 20%;
-    width: 60%;
+    margin-left: 31%;
+    width: 45%;
 } 
 
 .postContainer{
@@ -39,27 +39,26 @@
 .postUserName{
     font-size: 15px;
     font-weight: 500;
-    margin: 0 10 px; 
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 2px;
 }
 
 .postTime{
     font-size: 10px;
-    margin-left: 5px;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
 }
-
+ 
 .postedImage{
-     width: 350px;
+     width: 450px;
      background-size: cover;
      height: 300px;
-     margin-left: 80px;
-     margin-top: 3px;
+     margin-left: 85px;
+     margin-top: 5px;
 }
 
 .postBottomLeft{
-    margin-left: 6px;
+    margin-left: 4px;
     display: flex;
     align-items: center;
 }
@@ -89,3 +88,49 @@
     border-bottom: 1px dashed grey;
     cursor: pointer;
 }
+
+.postActions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .actionButton {
+    background-color: transparent;
+    border: none;
+    color: rgb(11, 11, 11);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0 5px;
+  }
+  
+  .actionButton:hover {
+    color: rgb(88, 102, 208);
+  }
+  
+  .actionButton svg {
+    margin-right: 5px;
+  }
+  
+  .topButton {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  .topButton:hover {
+    color: rgb(88, 102, 208);
+  }
+
+  .onClick:hover {
+    color: rgb(88, 102, 208);
+  }
+ 
+  .onClick{
+    font-size: 10px;
+  }

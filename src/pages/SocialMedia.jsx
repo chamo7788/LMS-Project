@@ -14,7 +14,6 @@ export default function SocialMedia() {
       <AddPost />
       <Post />
       <Post />
-      <RightSidebar />
       <LeftSideBar />
     </div>
   );
