@@ -1,10 +1,10 @@
 .card-containter{
     margin-top: 8%;
-    margin-left: 10%;
     width: 220px;
     height: 230px;
     background-color: rgb(213, 213, 241);
     border-radius: 10%;
+    margin-left: 40px;
 }
 .card-image{
     position: relative;

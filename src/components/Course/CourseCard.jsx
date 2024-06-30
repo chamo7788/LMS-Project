@@ -1,18 +1,16 @@
 import React from "react";
 import "../../assets/css/Course/courseCard.css";
-import courseImage from '../../assets/images/Course-image.png';
- 
-export function CourseCard(){
-    return (
 
+export function CourseCard({ image, title, instructor, subtitle }) {
+    return (
         <div className='card-containter'>
             <div className="card-image">
-                <img src={courseImage} alt="Logo" className='card-logo'/>
+                <img src={image} alt={title} className='card-logo'/>
             </div>
-            <div class="card-content">
-                <p className="card-title">Google AI Essentials</p>
-                <p className="card-instractor">Google</p>
-                <p className="card-subtitle">Beginner · Course</p>
+            <div className="card-content">
+                <p className="card-title">{title}</p>
+                <p className="card-instructor">{instructor}</p>
+                <p className="card-subtitle">{subtitle}</p>
             </div>
         </div>
     );

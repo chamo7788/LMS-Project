@@ -92,6 +92,12 @@
 
 }
 
+@media (max-width: 768px) {
+    .main_sidebar{
+        top: 40px;
+    }
+}
+
 @media (max-height:500px) {
     .main_sidebar{
         overflow-y: auto;
