@@ -6,7 +6,7 @@ import TagIcon from '@mui/icons-material/LocalOffer';
 import LiveIcon from '@mui/icons-material/LiveTv';
 import postImg from '../../../assets/images/noavatar.png';
 
-export function AddPost() {
+export  function AddPost() {
   return (
     <div className='addPost'>
         <div className="addPostContainer">

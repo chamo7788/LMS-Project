@@ -6,10 +6,10 @@
 }
 
 .addPost{
-    width:60%;
+    width: 50%;
     border-radius: 10px;
-    margin-top: 110px;
-    margin-left: 20%;
+    margin-top: 30px;
+    margin-left: 28%;
     -webkit-box-shadow: -2px -1px 15px 2px rgba(0,0,0,0.52); 
     box-shadow: -2px -1px 15px 2px rgba(0,0,0,0.52);
 } 
@@ -64,8 +64,7 @@
     border: none;
     padding: 7px;
     border-radius: 5px;
-    background-color: rgb(0, 179, 255);
+    background-color: rgb(55, 0, 255);
     color: white;
     cursor: pointer;
 }
-
