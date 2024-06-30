@@ -5,6 +5,7 @@ import SocialMedia from "./pages/SocialMedia";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Courses from "./pages/Courses";
+import DashBoard from "./pages/DashBoard";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/SocialMedia" element={<SocialMedia />} />
         <Route path="/course" element={<Courses />} />
+        <Route path="/dashBoard" element={<DashBoard />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
