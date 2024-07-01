@@ -1,78 +1,279 @@
 [
     {
+        "courseId": "1",
         "image": "courseImage1.png",
         "title": "Google AI Essentials",
         "instructor": "Google",
         "subtitle": "Beginner · Course",
-        "subject": "Artificial Intelligence"
+        "subject": "Artificial Intelligence",
+        "courseTitle": "Web Development",
+        "enrollCount": 138586,
+        "rating": 4.7,
+        "reviewsCount": 664,
+        "level": "Beginner",
+        "requirements": "No prior experience required",
+        "duration": "9 hours to complete",
+        "schedule": "3 weeks at 3 hours a week",
+        "flexible": "Flexible schedule",
+        "details": {
+            "about": "What you'll learn",
+            "modules": [
+                {
+                    "title": "Introduction to HTML",
+                    "info": "Module 1 • 2 hours to complete",
+                    "description": "Learn the basics of HTML and how to structure web pages.",
+                    "videos": 8,
+                    "readings": 3,
+                    "assignments": 2
+                },
+                {
+                    "title": "CSS Fundamentals",
+                    "info": "Module 2 • 3 hours to complete",
+                    "description": "Understand the principles of CSS and how to style web pages.",
+                    "videos": 10,
+                    "readings": 4,
+                    "assignments": 3
+                },
+                {
+                    "title": "JavaScript Basics",
+                    "info": "Module 3 • 4 hours to complete",
+                    "description": "Get introduced to JavaScript and learn how to make web pages interactive.",
+                    "videos": 12,
+                    "readings": 5,
+                    "assignments": 4
+                }
+            ],
+            "recommendations": ["Recommendation 1", "Recommendation 2"],
+            "testimonials": ["Testimonial 1", "Testimonial 2"]
+        },
+        "skills": ["Artificial Intelligence (AI)", "Prompt Engineering", "Large Language Models (LLMs)", "Generative AI"],
+        "learningObjectives": [
+            "Use generative AI tools to help develop ideas and content, make more informed decisions, and speed up daily work tasks",
+            "Use AI responsibly by identifying AI's potential biases and avoiding harm",
+            "Write clear and specific prompts to get the output you want - you'll apply prompting techniques to help summarize, create tag lines, and more",
+            "Develop strategies to stay up-to-date in the emerging landscape of AI"
+        ]
     },
     {
+        "courseId": "2",
         "image": "courseImage2.png",
         "title": "Python for Everybody",
         "instructor": "University of Michigan",
         "subtitle": "Beginner · Specialization",
-        "subject": "Programming"
+        "subject": "Programming",
+        "courseTitle": "Web Development",
+    
+        "enrollCount": 138586,
+        "rating": 4.7,
+        "reviewsCount": 664,
+        "level": "Beginner",
+        "requirements": "No prior experience required",
+        "duration": "9 hours to complete",
+        "schedule": "3 weeks at 3 hours a week",
+        "flexible": "Flexible schedule",
+        "details": {
+            "about": "What you'll learn",
+            "modules": [
+                {
+                    "title": "Introduction to HTML",
+                    "info": "Module 1 • 2 hours to complete",
+                    "description": "Learn the basics of HTML and how to structure web pages.",
+                    "videos": 8,
+                    "readings": 3,
+                    "assignments": 2
+                },
+                {
+                    "title": "CSS Fundamentals",
+                    "info": "Module 2 • 3 hours to complete",
+                    "description": "Understand the principles of CSS and how to style web pages.",
+                    "videos": 10,
+                    "readings": 4,
+                    "assignments": 3
+                },
+                {
+                    "title": "JavaScript Basics",
+                    "info": "Module 3 • 4 hours to complete",
+                    "description": "Get introduced to JavaScript and learn how to make web pages interactive.",
+                    "videos": 12,
+                    "readings": 5,
+                    "assignments": 4
+                }
+            ],
+            "recommendations": ["Recommendation 1", "Recommendation 2"],
+            "testimonials": ["Testimonial 1", "Testimonial 2"]
+        },
+        "skills": ["Artificial Intelligence (AI)", "Prompt Engineering", "Large Language Models (LLMs)", "Generative AI"],
+        "learningObjectives": [
+            "Use generative AI tools to help develop ideas and content, make more informed decisions, and speed up daily work tasks",
+            "Use AI responsibly by identifying AI's potential biases and avoiding harm",
+            "Write clear and specific prompts to get the output you want - you'll apply prompting techniques to help summarize, create tag lines, and more",
+            "Develop strategies to stay up-to-date in the emerging landscape of AI"
+        ]
     },
     {
+        "courseId": "3",
         "image": "courseImage3.png",
         "title": "Prompt Engineering",
         "instructor": "Vanderbilt University",
         "subtitle": "Beginner · Specialization",
-        "subject": "Artificial Intelligence"
+        "subject": "Artificial Intelligence",
+        "courseTitle": "Web Development",
+        "enrollCount": 138586,
+        "rating": 4.7,
+        "reviewsCount": 664,
+        "level": "Beginner",
+        "requirements": "No prior experience required",
+        "duration": "9 hours to complete",
+        "schedule": "3 weeks at 3 hours a week",
+        "flexible": "Flexible schedule",
+        "details": {
+            "about": "What you'll learn",
+            "modules": [
+                {
+                    "title": "Introduction to HTML",
+                     "info": "Module 1 • 2 hours to complete",
+                    "description": "Learn the basics of HTML and how to structure web pages.",
+                    "videos": 8,
+                    "readings": 3,
+                    "assignments": 2
+                },
+                {
+                    "title": "CSS Fundamentals",
+                    "info": "Module 2 • 3 hours to complete",
+                    "description": "Understand the principles of CSS and how to style web pages.",
+                    "videos": 10,
+                    "readings": 4,
+                    "assignments": 3
+                },
+                {
+                    "title": "JavaScript Basics",
+                    "info": "Module 3 • 4 hours to complete",
+                    "description": "Get introduced to JavaScript and learn how to make web pages interactive.",
+                    "videos": 12,
+                    "readings": 5,
+                    "assignments": 4
+                }
+            ],
+            "recommendations": ["Recommendation 1", "Recommendation 2"],
+            "testimonials": ["Testimonial 1", "Testimonial 2"]
+        },
+        "skills": ["Artificial Intelligence (AI)", "Prompt Engineering", "Large Language Models (LLMs)", "Generative AI"],
+        "learningObjectives": [
+            "Use generative AI tools to help develop ideas and content, make more informed decisions, and speed up daily work tasks",
+            "Use AI responsibly by identifying AI's potential biases and avoiding harm",
+            "Write clear and specific prompts to get the output you want - you'll apply prompting techniques to help summarize, create tag lines, and more",
+            "Develop strategies to stay up-to-date in the emerging landscape of AI"
+        ]
     },
     {
+        "courseId": "4",
         "image": "courseImage4.png",
         "title": "IBM Data Science",
         "instructor": "IBM",
         "subtitle": "Beginner · Professional Certificate",
-        "subject": "Data Science"
+        "subject": "Data Science",
+        "courseTitle": "Web Development",
+        "enrollCount": 138586,
+        "rating": 4.7,
+        "reviewsCount": 664,
+        "level": "Beginner",
+        "requirements": "No prior experience required",
+        "duration": "9 hours to complete",
+        "schedule": "3 weeks at 3 hours a week",
+        "flexible": "Flexible schedule",
+        "details": {
+            "about": "What you'll learn",
+            "modules": [
+                {
+                    "title": "Introduction to HTML",
+                    "info": "Module 1 • 2 hours to complete",
+                    "description": "Learn the basics of HTML and how to structure web pages.",
+                    "videos": 8,
+                    "readings": 3,
+                    "assignments": 2
+                },
+                {
+                    "title": "CSS Fundamentals",
+                    "info": "Module 2 • 3 hours to complete",
+                    "description": "Understand the principles of CSS and how to style web pages.",
+                    "videos": 10,
+                    "readings": 4,
+                    "assignments": 3
+                },
+                {
+                    "title": "JavaScript Basics",
+                    "info": "Module 3 • 4 hours to complete",
+                    "description": "Get introduced to JavaScript and learn how to make web pages interactive.",
+                    "videos": 12,
+                    "readings": 5,
+                    "assignments": 4
+                }
+            ],
+            "recommendations": ["Recommendation 1", "Recommendation 2"],
+            "testimonials": ["Testimonial 1", "Testimonial 2"]
+        },
+        "skills": ["Artificial Intelligence (AI)", "Prompt Engineering", "Large Language Models (LLMs)", "Generative AI"],
+        "learningObjectives": [
+            "Use generative AI tools to help develop ideas and content, make more informed decisions, and speed up daily work tasks",
+            "Use AI responsibly by identifying AI's potential biases and avoiding harm",
+            "Write clear and specific prompts to get the output you want - you'll apply prompting techniques to help summarize, create tag lines, and more",
+            "Develop strategies to stay up-to-date in the emerging landscape of AI"
+        ]
     },
     {
+        "courseId": "1",
         "image": "courseImage1.png",
         "title": "Google AI Essentials",
         "instructor": "Google",
         "subtitle": "Beginner · Course"
     },
     {
+        "courseId": "2",
         "image": "courseImage2.png",
         "title": "Python for Everybody",
         "instructor": "University of Michigan",
         "subtitle": "Beginner · Specialization"
     },
     {
+        "courseId": "3",
         "image": "courseImage3.png",
         "title": "Prompt Engineering",
         "instructor": "Vanderbilt University",
         "subtitle": "Beginner · Specialization"
     },
     {
+        "courseId": "4",
         "image": "courseImage4.png",
         "title": "IBM Data Science",
         "instructor": "IBM",
         "subtitle": "Beginner · Professional"
-    },{
+    },
+    {
+        "courseId": "google-ai-essentials-3",
         "image": "courseImage1.png",
         "title": "Google AI Essentials",
         "instructor": "Google",
         "subtitle": "Beginner · Course"
     },
     {
+        "courseId": "python-for-everybody-3",
         "image": "courseImage2.png",
         "title": "Python for Everybody",
         "instructor": "University of Michigan",
         "subtitle": "Beginner · Specialization"
     },
     {
+        "courseId": "prompt-engineering-3",
         "image": "courseImage3.png",
         "title": "Prompt Engineering",
         "instructor": "Vanderbilt University",
         "subtitle": "Beginner · Specialization"
     },
     {
+        "courseId": "ibm-data-science-3",
         "image": "courseImage4.png",
         "title": "IBM Data Science",
         "instructor": "IBM",
         "subtitle": "Beginner · Professional"
     }
-
 ]

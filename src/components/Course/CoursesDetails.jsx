@@ -1,11 +1,15 @@
 import React, { useState } from "react";
+import { useParams } from "react-router-dom"; // Assuming you use react-router for routing
 import "../../assets/css/Course/CoursesDetails.css";
-import { LeftSideBar, Navbar } from "../home";
-import courseDetails from "../../data/courseDetails.json";
+import courses from "../../data/courses.json";
 
-export function CoursesDetails() {
+export function CourseDetails() {
+  
+  const { courseId } = useParams(); // Get courseId from URL parameters
+  const courseDetails = courses.find(course => course.courseId === courseId);
+
   const [expandedModules, setExpandedModules] = useState(
-    Array(courseDetails.details.modules.length).fill(false)
+    Array(courseDetails?.details?.modules?.length || 0).fill(false)
   );
 
   const toggleDetails = (index) => {
@@ -16,13 +20,16 @@ export function CoursesDetails() {
     );
   };
 
+  if (!courseDetails) {
+    return <div>Course not found</div>;
+  }
+
   return (
     <div>
-      <Navbar />
-      <LeftSideBar />
+      
       <div className="container">
         <div className="image-container">
-          <img src=""></img>
+          <img src={courseDetails.image} alt="Course" />
           <h1 className="course-topic">{courseDetails.courseTitle}</h1>
           <p className="instructor">
             Instructor: <b>{courseDetails.instructor}</b>
@@ -95,8 +102,7 @@ export function CoursesDetails() {
         <section className="module-container" id="modules">
           <div className="description">
             <div className="title">
-              There are {courseDetails.details.modules.length} modules in this
-              course
+              There are {courseDetails.details.modules.length} modules in this course
             </div>
             <br />
             {courseDetails.details.about}
