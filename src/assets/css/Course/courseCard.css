@@ -7,6 +7,12 @@
     margin-left: 40px;
     cursor: pointer;
 }
+.card-container:hover{
+    box-shadow: rgb(26, 26, 26) 0 30px 30px -20px;
+    transform: scale(1) translateZ(0);
+    background-color: rgb(156, 174, 238);
+    
+}
 .card-image{
     position: relative;
     background-color: black;

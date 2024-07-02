@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Navbar, LeftSideBar, AllCourses } from "../components";
-import { CourseDetails } from "../components/Course/CoursesDetails";
+import { Navbar, LeftSideBar, AllCourses, CourseDetails } from "../components";
 
 export default function Courses() {
     return (
@@ -10,7 +9,7 @@ export default function Courses() {
             <LeftSideBar />
             <Routes>
                 <Route path="/" element={<AllCourses />} />
-                <Route path="course/:courseId" element={<CourseDetails />} />
+                <Route path="/course/:courseId" element={<CourseDetails />} />
             </Routes>
         </div>
     );

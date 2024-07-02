@@ -51,6 +51,7 @@ export function AllCourses() {
                                 title={course.title}
                                 instructor={course.instructor}
                                 subtitle={course.subtitle}
+                                courseId={course.courseId}
                             />
                         ))}
                     </div>
