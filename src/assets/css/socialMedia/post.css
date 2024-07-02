@@ -10,7 +10,7 @@
 .post{
     font-family: sans-serif;
     margin: 30px 0;
-    margin-left: 31%;
+    margin-left: 30.5%;
     width: 45%;
 } 
 
@@ -61,6 +61,8 @@
     margin-left: 4px;
     display: flex;
     align-items: center;
+    border-bottom: 1px dashed grey;
+    cursor: pointer;
 }
 
 .reactionPic{
@@ -76,6 +78,8 @@
     display: flex;
     margin-left: 5px;
     justify-content: space-between;
+    margin-top: 14px;
+    margin-bottom: 14px;
 }
 
 .likeCount{
@@ -92,8 +96,9 @@
 .postActions {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
-    border-top: 1px solid #e0e0e0;
+    padding: 2px 0;
+    border-top: 3px solid #e0e0e0;
+    border-bottom: 3px solid #e0e0e0;
   }
   
   .actionButton {
@@ -134,3 +139,75 @@
   .onClick{
     font-size: 10px;
   }
+
+  .likeCount, .reactionCount {
+    margin-left: 10px;
+  }
+
+  .likeCount{
+    margin-left: 4px;
+  }
+
+  .heartCount{
+    margin-left: 4px;
+  }
+
+  .feelCount{
+    margin-left: 4px;
+  }
+
+  .commentForm {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .commentInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+  }
+  
+  .commentButton {
+    padding: 10px 15px;
+    border: none;
+    background-color: #5866d0;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .commentButton:hover {
+    background-color: #4555a5;
+  }
+  
+  .commentsList {
+    margin-top: 10px;
+  }
+  
+  .comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .commentImage {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 4px;
+  }
+  
+  .commentText {
+    background-color: #f0f2f5;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+  
