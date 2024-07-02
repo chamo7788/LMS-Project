@@ -37,7 +37,7 @@ export function Navbar() {
           <NavLink to="/" onClick={toggleMobileMenu} className='navbar__menu-link' activeClassName="active">Home</NavLink>
         </li>
         <li className='navbar__menu-item'>
-          <NavLink to="/course" onClick={toggleMobileMenu} className='navbar__menu-link' activeClassName="active">Courses</NavLink>
+          <NavLink to="/courses" onClick={toggleMobileMenu} className='navbar__menu-link' activeClassName="active">Courses</NavLink>
         </li>
         <li className='navbar__menu-item'>
           <NavLink to="/about" onClick={toggleMobileMenu} className='navbar__menu-link' activeClassName="active">About</NavLink>
