@@ -1,6 +1,37 @@
 .barchart{
     position: relative;
-    background-color: aqua;
-    margin-top: 20%;
-    margin-left: 20%;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    background: #9bdee4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    padding-bottom: 25px;
+    margin: auto;
+}
+.chart{
+    background: #bbe8ea;
+    padding: 7px 10px 0px 8px;
+    border-radius: 10px;
+    font-size: larger;
+}
+.bardata{
+    font-size: 15px;
+}
+.bar{
+    fill:#8883d8;
+}
+/* this is used for full page */
+ .charts{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30%;
+    padding-left: 25%;
+    padding-right: 10%;
+ }
+
+ @media (max-width:1395px){
+    .charts{
+        padding-left: 11%;
+    }
 }
