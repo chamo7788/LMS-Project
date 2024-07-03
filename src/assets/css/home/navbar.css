@@ -157,7 +157,18 @@ body {
 }
 
 .navbar__login-button {
-  display: none;            /*  this depend on .Login_pic{  */
+  display: block;            /*  this depend on .Login_pic{  */
+  background-color: #3e3d3d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hide_navbar__login-button {
+  display: none;
   background-color: #3e3d3d;
   color: white;
   border: none;
@@ -174,12 +185,21 @@ body {
 /* user profile pictures */
 
 .Login_pic{
- display: block;        /*  this depend on .navbar__login-button { */
+  display: block;        /*  this depend on .navbar__login-button { */
   width: 50px;
   height: 50px;
   border-radius: 100%;
   transition: border-radius 0.5s; 
 }
+
+.hide_Login_pic{
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  transition: border-radius 0.5s; 
+ }
+
 .Login_pic:hover{
   border-radius: 20%;
   width: 50px;
