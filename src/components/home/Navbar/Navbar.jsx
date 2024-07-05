@@ -8,7 +8,7 @@ import imagesData from "../../../data/student_Images.json";
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -107,23 +107,16 @@ export function Navbar() {
       </div>
 
       <div className="navbar__login">
-        <NavLink to="/login">
-          <button
-            className={
-              isLoggedIn ? "hide_navbar__login-button" : "navbar__login-button"
-            }
-          >
-            Login
-          </button>
-        </NavLink>
-        {selectedImage && (
-          <NavLink className="userDetails_pic">
-            <img
-              src={selectedImage.url}
-              alt="User"
-              className={isLoggedIn ? "Login_pic" : "hide_Login_pic"}
-            />
+        {!isLoggedIn ? (
+          <NavLink to="/login">
+            <button className={"navbar__login-button"}>Login</button>
           </NavLink>
+        ) : (
+          selectedImage && (
+            <NavLink className="userDetails_pic">
+              <img src={selectedImage.url} alt="User" className={"Login_pic"} />
+            </NavLink>
+          )
         )}
       </div>
     </nav>
