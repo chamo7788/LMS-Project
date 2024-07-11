@@ -1,0 +1,107 @@
+.createPost{
+    margin-bottom: 5%;
+}
+
+.createImage {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 2%;
+    position: relative;
+    top: 4px;
+}
+
+.createUserName {
+    font-size: 15px;
+    margin-left: 10px;
+    position: relative;
+    top: -6px;
+}
+
+.clossicon1{
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgb(174, 23, 38);
+    color: white;
+    cursor: pointer;
+    position: relative;
+    margin-left: 2%;
+    bottom: 2px;
+}
+
+.PostButton {
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgb(23, 23, 174);
+    color: white;
+    cursor: pointer;
+    position: relative;
+    margin-left: 92%;
+    bottom: 48px;
+}
+
+.topic {
+    position: relative;
+    align-items: center;
+    bottom: 15px;
+    border: 3px solid gray;  
+    background-color: rgb(207, 207, 207);
+    padding-top: 15px;  
+    padding-bottom: 20px;  
+    height: 55px;  
+}
+
+.clossicon {
+    margin-right: 220%;
+    position: relative;
+}
+
+.header {
+    margin-left: 42%;
+    bottom: 25px;
+    position: relative;
+    font-size: 130%;
+}
+
+.fButton{
+    margin-left: 48px;
+    position: relative;
+    font-size: 100%;
+    border: 3px solid rgb(96, 84, 224); 
+    background-color: rgb(150, 145, 205); 
+    border-radius: 5px;
+    height: 22px; 
+    color: rgb(0, 0, 0);
+}
+
+.privacyOptions{
+    margin-left: 49px;
+}
+
+.addPostInput2{
+    margin-left: 5%;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    width: 90%; 
+    height: 50px;  
+    padding: 10px; 
+    box-sizing: border-box;  
+    font-size: 14px;  
+    border: 1px solid #ccc;  
+    border-radius: 5px; 
+}
+
+.createBottom {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    gap: 10px;  
+  }
+
+ 
+
+ 
+ 
