@@ -1,15 +1,15 @@
 import React from "react";
-import { Navbar, LeftSideBar, BarChart, PieChart, TodoList } from "../components";
+import { Navbar, LeftSideBar, BarChart, PieChart, TodoList, Profilecards } from "../components";
 
 export default function DashBoard() {
   return (
     <div>
       <Navbar />
       <LeftSideBar />
-      <BarChart />
-      <PieChart />
+      <Profilecards/>
       <TodoList/>
-
+     
     </div>
+    
   );
 }
