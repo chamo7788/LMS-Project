@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Courses from "./pages/Courses";
 import DashBoard from "./pages/DashBoard";
+import FindAnswers  from "./pages/FindAnswers";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/socialMedia" element={<SocialMedia />} />
         <Route path="/courses/*" element={<Courses />} />
         <Route path="/dashBoard" element={<DashBoard />} />
+        <Route path="/findAnswers/*" element={<FindAnswers />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
