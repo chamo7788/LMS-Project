@@ -118,6 +118,15 @@ body {
   color: #555;
 }
 
+.navbar__social-icon {
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.navbar__social-icon:hover {
+  color: black;
+}
 /* Search Box Styling */
 .navbar__searchbox {
   display: flex;
@@ -232,7 +241,7 @@ body {
     display: none;
     flex-direction: column;
     width: 100%;
-    margin-left: 70%;
+    margin-left: 43%;
   }
 
   .navbar__menu--active {
@@ -252,15 +261,20 @@ body {
   .navbar__mobile-menu-icon {
     display: block;
     align-self: flex-end;
-    margin-left: 70%;
+    margin-left: -10%;
+
   }
+  
 
   .navbar__login {
     display: block;
     flex-direction: row;
-    margin-left: -5%;
+    margin-right: -1%;
   }
   .navbar__message{
+    display: none;
+  }
+  .navbar__social-icon{
     display: none;
   }
 
