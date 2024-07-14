@@ -1,0 +1,40 @@
+[
+    {
+        "Subjecttitle": "Science",
+        "icon": "bi-house-fill",
+        "link": "/science"
+    },
+    {
+        "Subjecttitle": "Mathematics",
+        "icon": "bi-person-fill",
+        "link": "/mathematics"
+    },
+    {
+        "Subjecttitle": "Literature",
+        "icon": "bi bi-book-half",
+        "link": "/literature"
+    },
+    {
+        "Subjecttitle": "History",
+        "icon": "bi bi-bookmark-star",
+        "link": "/history"
+    },
+    {
+        "Subjecttitle": "Geography",
+        "icon": "bi bi-chat-left-text-fill",
+        "link": "/geography"
+    },
+    {
+        "Subjecttitle": "Art",
+        "icon": "bi bi-info-circle-fill",
+        "link": "/art"
+    },{
+        "Subjecttitle": "Bio",
+        "icon": "bi bi-chat-left-text-fill",
+        "link": "/geography"
+    },{
+        "Subjecttitle": "Web Development",
+        "icon": "bi bi-chat-left-text-fill",
+        "link": "/geography"
+    }
+]

@@ -1,42 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../../../assets/css/socialMedia/addPost.css";
 import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
 import LocationIcon from '@mui/icons-material/AddLocationAlt';
 import TagIcon from '@mui/icons-material/LocalOffer';
-import LiveIcon from '@mui/icons-material/LiveTv';
-import postImg from '../../../assets/images/noavatar.png';
+import postImg from '../../../assets/images/5142.jpg';
+import CreatePost from '../Post/CreatePost';
 
-export  function AddPost() {
+export function AddPost() {
+  const [showCreatePost, setShowCreatePost] = useState(false);
+
+  const handleAddPostInputClick = () => {
+    setShowCreatePost(true);
+  };
+
+  const handleCloseCreatePost = () => {
+    setShowCreatePost(false);
+  };
+
   return (
     <div className='addPost'>
-        <div className="addPostContainer">
-            <div className="addPostTop">
-                <img src={postImg} alt="" className="addPostPic"/>
-                <input placeholder="What's on your mind..?" type="text" className="addPostInput" />
+      <div className="addPostContainer">
+        <div className="addPostTop">
+          <img src={postImg} alt="" className="addPostPic"/>
+          <span className="addPostInput" onClick={handleAddPostInputClick}> What's on your mind?</span>
+        </div>
+        <hr className='postHr'/>
+        <div className="addPostBottom">
+          <div className="addPostOptions">
+            <div className="addPostOption1">
+              <AddAPhotoIcon htmlColor='orange' className='addPhoto'/>
+              <span className='addPostOptionText'>Add Photo/Video</span>
             </div>
-            <hr className='postHr'/>
-            <div className="addPostBotton">
-                <div className="addPostOptions">
-                    <div className="addPostoption">
-                       <AddAPhotoIcon htmlColor='orange' className='addPhoto'/>
-                       <span className='addPostOptionText'>Add Photo/Video</span>
-                    </div>
-                    <div className="addPostoption">
-                       <LocationIcon htmlColor='red'  className='addPhoto'/>
-                       <span className='addPostOptionText'>Add Location</span>
-                    </div>
-                    <div className="addPostoption">
-                       <TagIcon htmlColor='blue'  className='addPhoto'/>
-                       <span className='addPostOptionText'>Add Tag</span>
-                    </div>
-                    <div className="addPostoption">
-                       <LiveIcon htmlColor='tomato'  className='addPhoto'/>
-                       <span className='addPostOptionText'>Go Live</span>
-                    </div>
-                </div>
-                <button className='PostButton'>Post</button>
+            <div className="addPostOption2">
+              <LocationIcon htmlColor='red' className='addPhoto'/>
+              <span className='addPostOptionText'>Add Location</span>
             </div>
-        </div>     
-    </div>
+            <div className="addPostOption3">
+              <TagIcon htmlColor='blue' className='addPhoto'/>
+              <span className='addPostOptionText'>Add Tag</span>
+            </div>
+          </div>
+        </div>
+      </div>     
+      {showCreatePost && <CreatePost onClose={handleCloseCreatePost} />}
+    </div> 
   );
 }
