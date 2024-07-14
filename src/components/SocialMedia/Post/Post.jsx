@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "../../../assets/css/socialMedia/post.css";
 import postImg1 from '../../../assets/images/img1.png';
 import postImg2 from '../../../assets/images/img2.png';
-import dp from '../../../assets/images/noavatar.png';
+import dp from '../../../assets/images/5142.jpg';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp'; 
 import FavoriteIcon from '@mui/icons-material/Favorite';  
 import TagFacesIcon from '@mui/icons-material/TagFaces';  
@@ -89,7 +89,7 @@ export function Post() {
       <div className="postContainer">
         <div className="postTop">
           <img src={dp} alt="" className="postImage" />
-          <span className="postUserName">Chamodya Ganegamage</span> 
+          <span className="postUserName">Learn Hub</span> 
           <span className="postTime">5 mins ago</span>
           <button className='topButton' onClick={handleClick}>
             <MoreVertIcon />
