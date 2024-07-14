@@ -1,13 +1,3 @@
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f4f4f4;
-  margin: 0;
-}
-
 .card {
   background-color: #1382c7;
   color: black;
@@ -34,12 +24,12 @@ body {
   margin-bottom: 15px;
 }
 
-h1 {
+.profile-section h1 {
   font-size: 24px;
   margin: 10px 0;
 }
 
-p {
+.profile-section p {
   font-size: 14px;
   margin: 10px 0 20px;
 }

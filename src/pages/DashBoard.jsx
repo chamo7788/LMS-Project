@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, LeftSideBar, BarChart, PieChart, TodoList, Profilecards } from "../components";
+import { Navbar, LeftSideBar, TimeChart, PieChart, TodoList, Profilecards, Footer} from "../components";
 
 export default function DashBoard() {
   return (
@@ -10,8 +10,9 @@ export default function DashBoard() {
         <TimeChart />
         <PieChart />
       </div>
+      <Profilecards/>
       <TodoList />
-      <Footer/>
+      <Footer />
     </div>
     
   );
