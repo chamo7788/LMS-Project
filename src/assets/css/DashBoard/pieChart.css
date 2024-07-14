@@ -1,6 +1,7 @@
 .line-chart {
-    max-width: 500px;
-    margin: 35px auto;
+    position: relative;
+    width: 500px;
+    margin-left: 30px;
     background: #9bdee4;
     padding: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -10,6 +11,11 @@
     background: #bbe8ea;
     border-radius: 10px;
     
+}
+@media (max-width:768px){
+    .charts{
+        padding-right: 9%;
+    }
 }
 @media (max-width:768px){
     .line-chart{

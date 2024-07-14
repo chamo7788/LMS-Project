@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../assets/css/Course/allCourses.css";
 import { CourseCard } from "./CourseCard";
 import coursesData from "../../data/courses.json"; // Adjust the path according to your project structure
+import { Footer } from "../home/Footer/Footer.jsx";
 
 export function AllCourses() {
     const [courses, setCourses] = useState({});
@@ -62,6 +63,8 @@ export function AllCourses() {
                     )}
                 </div>
             ))}
+            <Footer/>
         </div>
+       
     );
 }

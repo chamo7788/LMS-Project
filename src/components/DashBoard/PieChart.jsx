@@ -1,33 +1,31 @@
 import React from "react";
-import "../../assets/css/DashBoard/pieChart.css";
+import "../../assets/css/DashBoard/pieChart.css"
 import Chart from "react-apexcharts";
 
-  // Function to generate dates for the past 7 days
-  const getPastWeekDates = () => {
-    const dates = [];
-    for (let i = 6; i >= 0; i--) {
-      const date = new Date();
-      date.setDate(date.getDate() - i);
-      dates.push(date.toISOString().split('T')[0]);
-    }
-    return dates;
-  };
-  
-  // Example function to generate random data for the past 7 days
-  const getRandomData = () => {
-    return Array.from({ length: 7 }, () => Math.floor(Math.random() * 100));
-  };
-  
-  
-export function PieChart() {
+// Function to generate dates for the past 7 days
+const getPastWeekDates = () => {
+  const dates = [];
+  for (let i = 6; i >= 0; i--) {
+    const date = new Date();
+    date.setDate(date.getDate() - i);
+    dates.push(date.toISOString().split('T')[0]);
+  }
+  return dates;
+};
 
+// Example of predefined data for the past 7 days
+const predefinedData = [45, 60, 75, 30, 50, 90, 80];
+
+export function PieChart() {
   const dates = getPastWeekDates();
-  const data = getRandomData();
 
   const options = {
     chart: {
       type: 'line',
-      height: '100%'
+      height: '100%',
+      toolbar: {
+        show: false
+      }
     },
     stroke: {
       width: 7,
@@ -49,12 +47,12 @@ export function PieChart() {
       type: 'gradient',
       gradient: {
         shade: 'dark',
-        gradientToColors: ['pink'],
+        gradientToColors: ['#FDD835'],
         shadeIntensity: 1,
         type: 'horizontal',
         opacityFrom: 1,
         opacityTo: 1,
-        stops: [0, 100, 100, 100]
+        stops: [0, 100]
       },
     },
     markers: {
@@ -73,20 +71,18 @@ export function PieChart() {
         text: 'Value',
       },
     }
-    
-    
   };
 
   const series = [
     {
       name: 'points',
-      data: data
+      data: predefinedData
     }
   ];
 
-  return(
-  <div className="line-chart">
-    <Chart options={options} series={series} type="line" height={350} />
-  </div>
+  return (
+    <div className="line-chart">
+      <Chart options={options} series={series} type="line" height={350} />
+    </div>
   );
 }

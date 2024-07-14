@@ -250,6 +250,9 @@ h2 {
     width: 24px;
     height: 24px;
 }
+.course_footer {
+    margin-top: 45%;
+}
 
 
 /* Mobile */
@@ -284,7 +287,6 @@ h2 {
         margin-top: 800px;
     
     }
-    
 }
 
 
@@ -364,7 +366,9 @@ h2 {
     .main_sidebar {
         display: none;
     }
-
-
+    .course_footer{
+        margin-top: 110%;
+    }
 }
+
 

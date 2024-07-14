@@ -6,9 +6,12 @@ export default function DashBoard() {
     <div>
       <Navbar />
       <LeftSideBar />
-      <Profilecards/>
-      <TodoList/>
-     
+      <div className="charts">
+        <TimeChart />
+        <PieChart />
+      </div>
+      <TodoList />
+      <Footer/>
     </div>
     
   );
