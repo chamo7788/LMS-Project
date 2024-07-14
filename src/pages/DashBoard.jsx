@@ -6,6 +6,7 @@ import {
   PieChart,
   TodoList,
 } from "../components";
+import { Footer } from "../components/home/Footer/Footer";
 
 export default function DashBoard() {
   return (
@@ -17,6 +18,7 @@ export default function DashBoard() {
         <PieChart />
       </div>
       <TodoList />
+      <Footer/>
     </div>
   );
 }

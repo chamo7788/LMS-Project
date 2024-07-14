@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom"; // Assuming you use react-router for routing
 import "../../assets/css/Course/CoursesDetails.css";
 import courses from "../../data/courses.json";
+import { Footer } from "../home/Footer/Footer.jsx";
 
 export function CourseDetails() {
   
@@ -153,6 +154,10 @@ export function CourseDetails() {
           ))}
         </section>
       </div>
+      <div className="course_footer">
+          <Footer/>
+        </div>
+      
     </div>
   );
 }
