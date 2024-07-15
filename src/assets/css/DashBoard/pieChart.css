@@ -12,9 +12,9 @@
     border-radius: 10px;
     
 }
-@media (max-width:1586px){
+@media (max-width:768px){
     .charts{
-        padding-right: 8%;
+        padding-right: 9%;
     }
 }
 @media (max-width:768px){

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "../../../assets/css/home/navbar.css";
 import logoLight from "../../../assets/images/logo-black.png";
-import { FaBars, FaTimes, FaEnvelope } from "react-icons/fa";
+import { FaBars, FaTimes, FaEnvelope, FaGlobe } from "react-icons/fa";
 import imagesData from "../../../data/student_Images.json";
 
 export function Navbar() {
@@ -102,10 +102,13 @@ export function Navbar() {
           </NavLink>
         </div>
       </div>
-      <div className="navbar__mobile-menu-icon" onClick={toggleMobileMenu}>
-        {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+      <div className="navbar__icons">
+        <div className="navbar__social-media">
+          <NavLink to="/socialmedia">
+            <FaGlobe className="navbar__social-icon" />
+          </NavLink>
+        </div>
       </div>
-
       <div className="navbar__login">
         {!isLoggedIn ? (
           <NavLink to="/login">
@@ -118,6 +121,9 @@ export function Navbar() {
             </NavLink>
           )
         )}
+      </div>
+      <div className="navbar__mobile-menu-icon" onClick={toggleMobileMenu}>
+        {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
       </div>
     </nav>
   );

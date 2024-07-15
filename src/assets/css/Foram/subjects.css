@@ -1,0 +1,110 @@
+.findAnswer-container {
+    background-color: rgb(189, 226, 252);
+    width: 75%;
+    height: 30%;
+    margin-top: 7%;
+    margin-left: 20%;
+}
+
+.subjects {
+    display: flex;
+    padding: 15px;
+    padding-right: 5%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.subject-card {
+    position: relative;
+    background-color: rgb(244, 241, 241);
+    width: auto;
+    height: 30px;
+    border-radius: 0.5rem;
+    font-size: 20px;
+    text-align: center;
+    border-style: ridge;
+    color: #3e3d3d;
+    transition: color 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(20% - 20px);
+}
+
+
+.subject-card:hover {
+    box-shadow: rgb(26, 26, 26) 0 30px 30px -20px;
+    background-color: rgb(120, 161, 237);
+    color: aliceblue;
+}
+
+.subject-card:active {
+    background-color: rgb(40, 98, 206);
+    color: aliceblue;
+}
+
+.subjects-title {
+    position: relative;
+    top: 5%;
+}
+
+.findAnswer-nevbar {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.879);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.creact-question {
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 30px;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    cursor: pointer;
+    justify-content: center;
+    padding: 0.4rem;
+    margin-left: 75%;
+}
+
+.creact-question:hover {
+    background-color: rgba(11, 105, 237, 0.342);
+}
+
+.create-title {
+    margin-right: 5px;
+}
+
+.notification-bell {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-bell:hover {
+    background-color: rgba(11, 105, 237, 0.342);
+}
+
+.dropdown-sort select {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(255, 248, 248);
+    border-radius: 25px;
+    color: rgba(0, 0, 0, 0.879);
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropdown-sort select:focus {
+    outline: none;
+}

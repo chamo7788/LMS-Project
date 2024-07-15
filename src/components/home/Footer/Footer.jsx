@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../../assets/css/home/homepage.css";
+import "../../../assets/css/home/footer.css"
 import { Link } from "react-router-dom";
 
 export function Footer(){
@@ -17,7 +17,8 @@ export function Footer(){
               <ul>
               <li><Link to="/home">Home</Link></li>
               <li><Link to="/messenger">Messenger</Link></li>
-              <li><Link to="/">About</Link></li>
+              <li><Link to="/dashboard">Dashboard</Link></li>
+              <li><Link to="/courses">Courses</Link></li>
               <li><Link to="/3">Services</Link></li>
               <li><Link to="/4">Contact</Link></li>
               </ul>
