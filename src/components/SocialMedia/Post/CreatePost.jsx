@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "../../../assets/css/socialMedia/createPost.css";
 import dp from '../../../assets/images/5142.jpg';
-import CloseIcon from '@mui/icons-material/Close';
 import PeopleIcon from '@mui/icons-material/People';
 import PublicIcon from '@mui/icons-material/Public';
 import PersonRemoveIcon from '@mui/icons-material/PersonRemove';
@@ -19,7 +18,11 @@ function CreatePost({ onClose }) {
   const [selectedPrivacy, setSelectedPrivacy] = useState('Friend');
 
   const handlePostClick = () => {
-    setPosted(true);
+    const confirmPost = window.confirm('Are you sure you want to post this?');
+    if (confirmPost) {
+      setPosted(true);
+      alert('Posted this post!');
+    }
   };
 
   const handlePrivacyClick = () => {

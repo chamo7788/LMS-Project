@@ -31,6 +31,7 @@ export function Post() {
     heart: false,
     feel: false,
   });
+  const [replyingToIndex, setReplyingToIndex] = useState(null);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -68,8 +69,17 @@ export function Post() {
   const handleCommentSubmit = (event) => {
     event.preventDefault();
     if (commentText.trim() !== '') {
-      setComments([...comments, commentText]);
+      if (replyingToIndex !== null) {
+        // If replying to a comment
+        const updatedComments = [...comments];
+        updatedComments[replyingToIndex] += ` Reply: ${commentText}`;
+        setComments(updatedComments);
+      } else {
+        // If adding a new comment
+        setComments([...comments, commentText]);
+      }
       setCommentText('');
+      setReplyingToIndex(null);
     }
   };
 
@@ -78,11 +88,21 @@ export function Post() {
   };
 
   const handleShareClick = () => {
-    setShares(prevShares => prevShares + 1);
-    alert('Please share this post!');
+    const confirmed = window.confirm('Do you want to share this post?');
+    if (confirmed) {
+      setShares((prevShares) => prevShares + 1);
+      // Proceed with actual share action here
+      // Example: API call or any specific functionality for sharing
+    }
   };
 
   const photos = [postImg1, postImg2, postImg1, postImg2];
+
+  const handleReplyClick = (index) => {
+    setReplyingToIndex(index);
+    setShowCommentForm(true); // Show the comment form when replying
+    setCommentText(''); // Clear the comment text
+  };
 
   return (
     <div className="post">
@@ -109,7 +129,7 @@ export function Post() {
           <div className="postCaption">
             This is INDUSTPRO 3.0 Final Phase.
           </div>
-           <PhotoGrid photos={photos} /> 
+          <PhotoGrid photos={photos} /> 
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
@@ -149,19 +169,26 @@ export function Post() {
               {comments.map((comment, index) => (
                 <div key={index} className="comment">
                   <img src={dp} alt="" className="commentImage" />
+                  <span className="UserName">Learn Hub</span> 
                   <div className="commentText">{comment}</div>
+                  <div className="commentActions">
+                    <button className="commentActionButton1">Like</button>
+                    <button className="commentActionButton2" onClick={() => handleReplyClick(index)}>Reply</button>
+                  </div>
                 </div>
               ))}
             </div>
             <form className="commentForm" onSubmit={handleCommentSubmit}>
               <input 
                 type="text" 
-                placeholder="Write a comment..." 
+                placeholder={replyingToIndex !== null ? 'Write a reply...' : 'Write a comment...'} 
                 value={commentText} 
                 onChange={handleCommentChange} 
                 className="commentInput"
               />
-              <button type="submit" className="commentButton"> Send </button>
+              <button type="submit" className="commentButton">
+                {replyingToIndex !== null ? 'Send Reply' : 'Send' }
+              </button>
             </form>
           </div>
         )}
@@ -169,3 +196,4 @@ export function Post() {
     </div>
   );
 }
+
