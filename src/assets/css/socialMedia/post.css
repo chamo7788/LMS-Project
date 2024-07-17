@@ -1,213 +1,259 @@
-.postImage{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 10px;
-    margin-left: 7px;
+.postImage {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-left: -3px;
 }
 
-.post{
-    font-family: sans-serif;
-    margin: 30px 0;
-    margin-left: 30.5%;
-    width: 45%;
-} 
-
-.postContainer{
-    -webkit-box-shadow: -2px -1px 15px 2px rgba(0,0,0,0.52); 
-    box-shadow: -2px -1px 15px 2px rgba(0,0,0,0.52);
-    border-radius: 10px;
+.post {
+  font-family: sans-serif;
+  margin: 30px 0;
+  margin-left: 30.5%;
+  width: 45%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #fff;
+  -webkit-box-shadow: -2px -1px 15px 2px rgba(0,0,0,0.52); 
+  box-shadow: -2px -1px 15px 2px rgba(0,0,0,0.52);
 }
 
-
-.postTop{
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 7px;
-}
-
-.postCenter{
-    margin: 20px 0;
-}
-
-.postCaption{
-    margin-left: 10px;
-}
-
-.postUserName{
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-
-.postTime{
-    font-size: 10px;
-    margin-left: 20px;
-    margin-top: 15px;
-}
  
-.postedImage{
-     width: 450px;
-     background-size: cover;
-     height: 300px;
-     margin-left: 85px;
-     margin-top: 5px;
+.postTop {
+  margin-top: -3px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
 }
 
-.postBottomLeft{
-    margin-left: 4px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px dashed grey;
-    cursor: pointer;
+.postCenter {
+  margin: 20px 0;
 }
 
-.reactionPic{
-    margin-left: 6px;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
+.postCaption {
+  margin-left: 10px;
 }
 
-.postBottom{
-    width: 98%;
-    align-items: center;
-    display: flex;
-    margin-left: 5px;
-    justify-content: space-between;
-    margin-top: 14px;
-    margin-bottom: 14px;
+.postUserName {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-left: 10px;
 }
 
-.likeCount{
-    margin-left: 5px;
-    font-size: 15px;
+.postTime {
+  font-size: 10px;
+  margin-left: 20px;
+  margin-top: 15px;
 }
 
-.commentCount{
-    margin-right: 10px;
-    border-bottom: 1px dashed grey;
-    cursor: pointer;
+.postedImage {
+  width: 450px;
+  background-size: cover;
+  height: 300px;
+  margin-left: 85px;
+  margin-top: 5px;
+}
+
+.postBottomLeft {
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed grey;
+  cursor: pointer;
+}
+
+.reactionPic {
+  margin-left: 6px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.postBottom {
+  width: 98%;
+  align-items: center;
+  display: flex;
+  margin-left: 5px;
+  justify-content: space-between;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.likeCount {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.commentCount {
+  margin-right: 10px;
+  border-bottom: 1px dashed grey;
+  cursor: pointer;
 }
 
 .postActions {
-    display: flex;
-    justify-content: space-between;
-    padding: 2px 0;
-    border-top: 3px solid #e0e0e0;
-    border-bottom: 3px solid #e0e0e0;
-  }
-  
-  .actionButton {
-    background-color: transparent;
-    border: none;
-    color: rgb(11, 11, 11);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    margin: 0 5px;
-  }
-  
-  .actionButton:hover {
-    color: rgb(88, 102, 208);
-  }
-  
-  .actionButton svg {
-    margin-right: 5px;
-  }
-  
-  .topButton {
-    background-color: transparent;
-    color: rgb(0, 0, 0);
-    margin-left: auto;
-    margin-top: 10px;
-    display: flex;
-  }
-  
-  .topButton:hover {
-    color: rgb(88, 102, 208);
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 0;
+  border-top: 3px solid #e0e0e0;
+  border-bottom: 3px solid #e0e0e0;
+}
 
-  .onClick:hover {
-    color: rgb(88, 102, 208);
-  }
+.actionButton {
+  background-color: transparent;
+  border: none;
+  color: rgb(11, 11, 11);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.actionButton:hover {
+  color: rgb(88, 102, 208);
+}
+
+.actionButton svg {
+  margin-right: 5px;
+}
+
+.topButton {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  margin-left: auto;
+  margin-top: 10px;
+  display: flex;
+}
+
+.topButton:hover {
+  color: rgb(88, 102, 208);
+}
+
+.onClick:hover {
+  color: rgb(88, 102, 208);
+}
+
+.onClick {
+  font-size: 10px;
+}
+
+.likeCount,
+.reactionCount {
+  margin-left: 10px;
+}
+
+.likeCount {
+  margin-left: 4px;
+}
+
+.heartCount {
+  margin-left: 4px;
+}
+
+.feelCount {
+  margin-left: 4px;
+}
+
+.UserName{
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+
+.commentForm {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #e0e0e0;
+  top: 20px;
+}
+
+.commentInput {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #020202;
+  border-radius: 20px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.commentButton {
+  padding: 10px 15px;
+  border: none;
+  background-color: #474748;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.commentButton:hover {
+  background-color: #4555a5;
+  color: white;
+}
+
+.commentsList {
+  margin-top: 10px;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.commentImage {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 4px;
+}
+
+.commentText {
+  background-color: #f0f2f5;
+  padding: 6px 15px;
+  border-radius: 20px;
+  max-width: 80%;
+  word-wrap: break-word;
+  margin-top: 50px;
+  margin-left: -70px;
+}
+
+.commentActionButton1 {
+  position: relative;
+  display: flex;
+  background-color: transparent;
+  border: none;
+  color: #5866d0;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: -35px;
+  top: 60px;
+  font-size: 12px;
+}
+
+.commentActionButton2 {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  color: #5866d0;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 3px;
+  top: 37px;
+  font-size: 12px;
+}
+
+.commentActionButton1:hover, 
+.commentActionButton2:hover {
+  color: #4555a5;
+  text-decoration: underline;
+}
+
  
-  .onClick{
-    font-size: 10px;
-  }
-
-  .likeCount, .reactionCount {
-    margin-left: 10px;
-  }
-
-  .likeCount{
-    margin-left: 4px;
-  }
-
-  .heartCount{
-    margin-left: 4px;
-  }
-
-  .feelCount{
-    margin-left: 4px;
-  }
-
-  .commentForm {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-top: 1px solid #e0e0e0;
-  }
-  
-  .commentInput {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #e0e0e0;
-    border-radius: 20px;
-    margin-right: 10px;
-    outline: none;
-  }
-  
-  .commentButton {
-    padding: 10px 15px;
-    border: none;
-    background-color: #5866d0;
-    color: white;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  .commentButton:hover {
-    background-color: #4555a5;
-  }
-  
-  .commentsList {
-    margin-top: 10px;
-  }
-  
-  .comment {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .commentImage {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-left: 4px;
-  }
-  
-  .commentText {
-    background-color: #f0f2f5;
-    padding: 10px 15px;
-    border-radius: 20px;
-    max-width: 80%;
-    word-wrap: break-word;
-  }
-  
