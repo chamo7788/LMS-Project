@@ -1,0 +1,7 @@
+{
+    "courses": [
+      { "courseId": "1", "percentageComplete": "50" },
+      { "courseId": "2", "percentageComplete": "70" },
+      { "courseId": "3", "percentageComplete": "20" }
+    ]
+  }
