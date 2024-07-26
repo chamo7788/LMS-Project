@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import '../../assets/css/Foram/subjects.css';
 import subjects from "../../data/subjects.json";
 
-export function Subjects() {
+export function Subjects({ onCreateQuestionClick }) {
     return (
         <div className="findAnswer-container">
             <div className="subjects">
@@ -24,7 +24,7 @@ export function Subjects() {
                         <option value="best">Best</option>
                     </select>
                 </div>
-                <div className="creact-question">
+                <div className="creact-question" onClick={onCreateQuestionClick}>
                     <span className="create-title">Create</span>
                     <i className="fa-solid fa-plus"></i>
                 </div>

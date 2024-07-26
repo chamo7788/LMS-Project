@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { LeftSideBar, Navbar, Subjects, QuestionPost } from "../components";
+import { LeftSideBar, Navbar, Subjects, QuestionPost, QuestionCreatePost, ParentComponent } from "../components";
 
 
 export default function Foram(){
@@ -8,7 +8,7 @@ export default function Foram(){
         <div>
             <Navbar/>
             <LeftSideBar/>
-            <Subjects/>
+            <ParentComponent/>
             <QuestionPost/>
         </div>
     );
