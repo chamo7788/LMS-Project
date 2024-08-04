@@ -1,9 +1,9 @@
 .main_sidebar {
     position: fixed;
     background-color: var(--blue);
-    top: 83px;
+    top: 60px;
     bottom: 73px;
-    width: 20em;
+    width: 17em;
     color: var(--white);
     padding-top: 2em;
     border-top: 1px solid #fff;
@@ -47,7 +47,7 @@
     position: fixed;
     bottom: 0;
     height: 73px;
-    width: 25em;
+    width: 21.3em;
     font-size: .8em;
     padding: 2em;
     border-top: .5px solid #fff;
