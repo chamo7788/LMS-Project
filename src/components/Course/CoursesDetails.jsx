@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom"; // Assuming you use react-router for routing
+import { useParams, useNavigate } from "react-router-dom"; // Import useNavigate
 import { useDispatch, useSelector } from "react-redux";
 import "../../assets/css/Course/CoursesDetails.css";
 import courses from "../../data/courses.json";
@@ -10,6 +10,7 @@ export function CourseDetails() {
   const { courseId } = useParams(); // Get courseId from URL parameters
   const courseDetails = courses.find(course => course.courseId === courseId);
   const dispatch = useDispatch(); // Initialize dispatch
+  const navigate = useNavigate(); // Initialize navigate
   const enrolledCourses = useSelector(state => state.enrolledCourses); // Get enrolled courses from state
 
   const [expandedModules, setExpandedModules] = useState(
@@ -25,7 +26,11 @@ export function CourseDetails() {
   };
 
   const handleEnroll = () => {
-    dispatch({ type: 'ENROLL_COURSE', payload: courseId });
+    if (isEnrolled) {
+      navigate(`/courses/course/${courseId}/preview`);
+    } else {
+      dispatch({ type: 'ENROLL_COURSE', payload: courseId });
+    }
   };
 
   if (!courseDetails) {
@@ -36,7 +41,6 @@ export function CourseDetails() {
 
   return (
     <div>
-      
       <div className="container">
         <div className="image-container">
           <img src={courseDetails.image} alt="Course" />
@@ -166,9 +170,8 @@ export function CourseDetails() {
         </section>
       </div>
       <div className="course_footer">
-          <Footer/>
-        </div>
-      
+        <Footer />
+      </div>
     </div>
   );
 }

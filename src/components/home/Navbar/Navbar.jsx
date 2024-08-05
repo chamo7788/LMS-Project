@@ -79,22 +79,22 @@ export function Navbar() {
         </li>
         <li className="navbar__menu-item">
           <NavLink
-            to="/about"
+            to="/findanswers"
             onClick={toggleMobileMenu}
             className="navbar__menu-link"
             activeClassName="active"
           >
-            About
+            Discussion
           </NavLink>
         </li>
         <li className="navbar__menu-item">
           <NavLink
-            to="/services"
+            to="/dashboard"
             onClick={toggleMobileMenu}
             className="navbar__menu-link"
             activeClassName="active"
           >
-            Services
+            Profile
           </NavLink>
         </li>
         <li className="navbar__menu-item">
