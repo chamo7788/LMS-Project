@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom"; // Assuming you use react-router for routing
+import { useDispatch, useSelector } from "react-redux";
 import "../../assets/css/Course/CoursesDetails.css";
 import courses from "../../data/courses.json";
 import { Footer } from "../home/Footer/Footer.jsx";
@@ -8,6 +9,8 @@ export function CourseDetails() {
   
   const { courseId } = useParams(); // Get courseId from URL parameters
   const courseDetails = courses.find(course => course.courseId === courseId);
+  const dispatch = useDispatch(); // Initialize dispatch
+  const enrolledCourses = useSelector(state => state.enrolledCourses); // Get enrolled courses from state
 
   const [expandedModules, setExpandedModules] = useState(
     Array(courseDetails?.details?.modules?.length || 0).fill(false)
@@ -21,9 +24,15 @@ export function CourseDetails() {
     );
   };
 
+  const handleEnroll = () => {
+    dispatch({ type: 'ENROLL_COURSE', payload: courseId });
+  };
+
   if (!courseDetails) {
     return <div>Course not found</div>;
   }
+
+  const isEnrolled = enrolledCourses.includes(courseId);
 
   return (
     <div>
@@ -35,7 +44,9 @@ export function CourseDetails() {
           <p className="instructor">
             Instructor: <b>{courseDetails.instructor}</b>
           </p>
-          <button className="enroll-button">Enroll Now</button>
+          <button className="enroll-button" onClick={handleEnroll}>
+            {isEnrolled ? 'Open Course' : 'Enroll Now'}
+          </button>
           <p className="enroll-count">
             <b>{courseDetails.enrollCount.toLocaleString()}</b> already enrolled
           </p>

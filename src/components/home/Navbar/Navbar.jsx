@@ -1,17 +1,26 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import "../../../assets/css/home/navbar.css";
 import logoLight from "../../../assets/images/logo-black.png";
 import { FaBars, FaTimes, FaEnvelope, FaGlobe } from "react-icons/fa";
 import imagesData from "../../../data/student_Images.json";
+import { login, logout } from "../../../actions/authActions";
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLogoutVisible, setIsLogoutVisible] = useState(false);
+  const isLoggedIn = useSelector((state) => state.isLoggedIn);
+  const user = useSelector((state) => state.user);
+  const dispatch = useDispatch();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const toggleLogoutVisibility = () => {
+    setIsLogoutVisible(!isLogoutVisible);
   };
 
   useEffect(() => {
@@ -27,6 +36,14 @@ export function Navbar() {
         .catch((err) => console.error("Failed to load image:", err));
     }
   }, []);
+
+  const handleLogin = () => {
+    dispatch(login({ id: 1, name: "John Doe" })); // Example login
+  };
+
+  const handleLogout = () => {
+    dispatch(logout());
+  };
 
   return (
     <nav className="navbar">
@@ -111,15 +128,26 @@ export function Navbar() {
       </div>
       <div className="navbar__login">
         {!isLoggedIn ? (
-          <NavLink to="/login">
-            <button className={"navbar__login-button"}>Login</button>
-          </NavLink>
+          <button onClick={handleLogin} className={"navbar__login-button"}>
+            Login
+          </button>
         ) : (
-          selectedImage && (
-            <NavLink className="userDetails_pic">
-              <img src={selectedImage.url} alt="User" className={"Login_pic"} />
-            </NavLink>
-          )
+          <div>
+            {selectedImage && (
+              <NavLink className="userDetails_pic" onClick={toggleLogoutVisibility}>
+                <img
+                  src={selectedImage.url}
+                  alt="User"
+                  className={"Login_pic"}
+                />
+              </NavLink>
+            )}
+            {isLogoutVisible && (
+              <button onClick={handleLogout} className={"navbar__logout-button"}>
+                Logout
+              </button>
+            )}
+          </div>
         )}
       </div>
       <div className="navbar__mobile-menu-icon" onClick={toggleMobileMenu}>
