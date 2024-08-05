@@ -34,6 +34,27 @@ body {
   background-color: var(--bluenav);
 } */
 
+
+/* Logout Button Styling */
+.navbar__logout-button {
+  position: absolute;
+  background-color: rgba(33, 149, 203, 0.708);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar__logout-button:hover {
+  background-color: rgb(33, 149, 203);
+  color: white;
+}
+
+
+
 @media (max-width:1395px) {
   .navbar__logo{
     position: fixed;
