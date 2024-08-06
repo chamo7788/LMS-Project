@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../assets/css/DashBoard/DBCourses.css";
-import { EnrollingCourses } from "./EnrollingCourses";
+import { DBCoursesCard } from "./DBCoursesCard";
 import coursesData from "../../data/courses.json"; // Adjust the path according to your project structure
 import courseIdData from "../../data/DBCourses.json";
 
@@ -54,10 +54,10 @@ export function DBCourses() {
   };
 
   return (
-    <div className="allCourse-container">
-      <div className="courses-container">
+    <div className="dbCourse-container">
+      <div className="dbCourse-subcontainer">
         {filteredCourses.slice(0, visibleCount).map((course, index) => (
-          <EnrollingCourses
+          <DBCoursesCard
             key={index}
             image={course.image}
             title={course.title}
@@ -70,7 +70,7 @@ export function DBCourses() {
         ))}
       </div>
       {visibleCount < filteredCourses.length && (
-        <button className="show-more-button" onClick={showMoreCourses}>
+        <button className="dbshow-more-button" onClick={showMoreCourses}>
           Show More
         </button>
       )}

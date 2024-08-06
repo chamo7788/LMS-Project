@@ -1,17 +1,18 @@
-.allCourse-containter{
+.dbCourse-container {
     padding-top: 3%;
-    
+
 }
-.courses-container{
+
+.dbCourse-subcontainer {
     display: flex;
     flex-wrap: wrap;
-    padding:  0px 60px;
+    padding: 0px 60px;
     margin-left: 20%;
-    margin-top: 5%; 
+    margin-top: 5%;
     margin-bottom: 1%;
 }
 
-.show-more-button {
+.dbshow-more-button {
     position: relative;
     display: block;
     margin-top: 3%;
@@ -25,12 +26,12 @@
     cursor: pointer;
 }
 
-.show-more-button:hover {
+.dbshow-more-button:hover {
     background-color: #0056b3;
     color: aliceblue;
 }
 
-.subject-title{
+.subject-title {
     position: absolute;
     font-size: 25px;
     margin-left: 25%;
@@ -43,11 +44,12 @@
 }
 
 @media (max-width: 1395px) {
-    .courses-container{
+    .dbCourse-subcontainer {
         margin-left: 0%;
-        
+
     }
-    .subject-title{
+
+    .subject-title {
         margin-left: 10%;
     }
 }
