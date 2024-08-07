@@ -10,10 +10,10 @@ import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
 import LocationIcon from '@mui/icons-material/AddLocationAlt';
 import TagIcon from '@mui/icons-material/LocalOffer';
 import CollectionsIcon from '@mui/icons-material/Collections';
-import TagFacesIcon from '@mui/icons-material/TagFaces';  
+import TagFacesIcon from '@mui/icons-material/TagFaces';
 
 function CreatePost({ onClose }) {
-  const [posted, setPosted] = useState(false);
+  const [postedFiles, setPostedFiles] = useState([]); // State to hold posted files
   const [showPrivacyOptions, setShowPrivacyOptions] = useState(false);
   const [selectedPrivacy, setSelectedPrivacy] = useState('Friend');
   const [postContent, setPostContent] = useState('');
@@ -23,10 +23,14 @@ function CreatePost({ onClose }) {
   const handlePostClick = () => {
     const confirmPost = window.confirm('Are you sure you want to post this?');
     if (confirmPost) {
-      setPosted(true);
       alert('Posted this post!');
-      // Add your upload logic here
-
+      
+       
+      setPostedFiles(prevFiles => [
+        ...prevFiles,
+        { content: postContent, files: fileUrls }
+      ]);
+       
       setPostContent('');
       setSelectedFiles([]);
       setFileUrls([]);
@@ -61,25 +65,29 @@ function CreatePost({ onClose }) {
 
   const handleFileChange = (event) => {
     const files = Array.from(event.target.files);
-
-     
+    
     if (files.length + selectedFiles.length > 10) {
-        alert('You can only upload a maximum of 10 files.');
-        return;
+      alert('You can only upload a maximum of 10 files.');
+      return;
     }
-
     
     const validFiles = files.filter(file => file.type.startsWith('image/') || file.type.startsWith('video/'));
     
     setSelectedFiles(prevFiles => [...prevFiles, ...validFiles]);
     setFileUrls(prevUrls => [
-        ...prevUrls,
-        ...validFiles.map(file => URL.createObjectURL(file))
+      ...prevUrls,
+      ...validFiles.map(file => URL.createObjectURL(file))
     ]);
   };
 
   const handleAddPhotoClick = () => {
     document.getElementById('file-input').click();  
+  };
+
+  const handleDeleteFile = (index) => {
+    // Remove the file from both selectedFiles and fileUrls
+    setSelectedFiles(prevFiles => prevFiles.filter((_, i) => i !== index));
+    setFileUrls(prevUrls => prevUrls.filter((_, i) => i !== index));
   };
 
   return (
@@ -92,10 +100,10 @@ function CreatePost({ onClose }) {
           </button> 
           <span className='header'>Create Post</span>
           <button
-            className={`PostButton ${posted ? 'posted' : ''}`}
+            className={`PostButton ${postedFiles.length ? 'posted' : ''}`}
             onClick={handlePostClick}
           >
-            {posted ? 'Posted' : 'Post'}
+            {postedFiles.length ? 'Posted' : 'Post'}
           </button>
         </div>
         <div className="createTop">
@@ -208,7 +216,6 @@ function CreatePost({ onClose }) {
           </button>
         </div>
 
-         
         <div className="uploadedFiles">
           {fileUrls.map((fileUrl, index) => (
             <div key={index} className="filePreview">
@@ -220,6 +227,30 @@ function CreatePost({ onClose }) {
               ) : (
                 <img src={fileUrl} alt={`Uploaded file ${index}`} className="fileImage" />
               )}
+            </div>
+          ))}
+        </div>
+        
+         
+        <div className="postedFiles">
+          {postedFiles.map((post, postIndex) => (
+            <div key={postIndex} className="postedFilePreview">
+              <p>{post.content}</p>
+              {post.files.map((fileUrl, fileIndex) => (
+                <div key={fileIndex} className="filePreview">
+                  {fileUrl.endsWith('.mp4') ? (  
+                    <video controls className="fileVideo">
+                      <source src={fileUrl} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    <img src={fileUrl} alt={`Posted file ${fileIndex}`} className="fileImage" />
+                  )}
+                  <button className="deleteButton" onClick={() => handleDeleteFile(index)}>
+                    Delete
+                  </button>
+                </div>
+              ))}
             </div>
           ))}
         </div>
