@@ -1,0 +1,35 @@
+.video_page{
+  margin-top: 8%;
+  display: flex;
+}
+.video_page .h1{
+    display: flex;
+}
+.video{
+    display: flex;
+    max-width: 90%;
+    align-items: center;
+}
+.video video {
+    width: 100%; 
+  }
+.path {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: -1%;
+    font-size: 15px;
+    color: #545353;
+}
+  
+.path span {
+    margin: 0 5px;
+}
+.path a {
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+.path a:hover {
+    color: #007bff; 
+}
+  
