@@ -1,0 +1,128 @@
+.containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif; 
+    background-color: #000000;
+    margin: 10px;
+    padding: 0;
+    margin-left: 19%;
+}
+
+.profiles {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: 5% auto;
+    padding: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 110px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.details {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.preview {
+    position: relative;
+    width: 80%;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 15%;
+    margin-left: 10%;
+    margin-top: 0px;
+} 
+
+.avtr {
+    width: 50%;
+    border-radius: 20px;    
+    box-shadow: 0px 0px 18px rgb(255, 255, 255);
+    
+}
+.img:hover {
+    color: #424242;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    opacity: 1;
+    transform: scale(1.15);
+    -ms-transform: scale(1.15); /* IE 9 */
+    -webkit-transform: scale(1.15); /* Safari and Chrome */
+}
+
+form h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+.submitpreview{
+    width: 150%;
+
+}
+
+.box {
+    margin-bottom: 15px;
+    width: 500px; 
+}
+
+.option {
+    margin-bottom: 15px;
+    padding-left: 210px;
+    text-align: justify;
+}
+.box label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+.box input[type="text"],
+.box input[type="number"],
+.box input[type="email"],
+.box input[type="password"],
+.box textarea,
+.box select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.box input[type="radio"] {
+    margin-right: 5px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons input[type="submit"],
+.buttons input[type="reset"] {
+    padding: 10px 20px;
+    width: 100px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: hsl(0, 0%, 0%);
+    cursor: pointer;
+}
+
+.buttons input[type="reset"] {
+    background-color: #f44336;
+}
+
+.buttons input[type="submit"]:hover,
+.buttons input[type="reset"]:hover {
+    opacity: 0.8;
+}

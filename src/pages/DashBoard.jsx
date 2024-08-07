@@ -5,6 +5,7 @@ import {
   TimeChart,
   PieChart,
   TodoList,
+  EditProfile,
 } from "../components";
 
 export default function DashBoard() {
@@ -12,11 +13,8 @@ export default function DashBoard() {
     <div>
       <Navbar />
       <LeftSideBar />
-      <div className="charts">
-        <TimeChart />
-        <PieChart />
-      </div>
-      <TodoList />
+      <EditProfile/>
+      
     </div>
   );
 }

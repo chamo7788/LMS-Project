@@ -62,7 +62,7 @@ export function Navbar() {
         </li>
         <li className="navbar__menu-item">
           <NavLink
-            to="/about"
+            to="/dashboard"
             onClick={toggleMobileMenu}
             className="navbar__menu-link"
             activeClassName="active"
