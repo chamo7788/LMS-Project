@@ -37,8 +37,8 @@ export function Discuss() {
         placeholder="Type something..."
         rows={1} 
       />
-         <button className="ReplayDiscuss_message"  style={{ marginRight: '8px' }} >
-         <FaPaperPlane style={{ marginRight: '8px' }} />Replay</button>
+         <button className="ReplayDiscuss_message_button"  style={{ marginRight: '8px' }} >
+         <FaPaperPlane style={{ marginRight: '8px' }} />Create_Post</button>
     </div>
          <br />
          
@@ -52,9 +52,9 @@ export function Discuss() {
 
         <div className="Discuss_message_icon_button">
           <span  style={{ marginRight: '8px',margin:'10px' }}>{likes} {likes === 1 ? 'Like' : 'Likes'}</span>
-          <button className="ReplayDiscuss_message" onClick={handleLike}>
+          <button className="ReplayDiscuss_message_button" onClick={handleLike}>
           <FaThumbsUp style={{ marginRight: '8px', color: 'green', fontSize: '15px' }} /> Like</button>
-          <button className="ReplayDiscuss_message" onClick={toggleVisibility}><FaReply style={{ marginRight: '8px' }} />Reply</button>
+          <button className="ReplayDiscuss_message_button" onClick={toggleVisibility}><FaReply style={{ marginRight: '8px' }} />Reply</button>
         </div>
       
      
@@ -69,7 +69,7 @@ export function Discuss() {
         </div>  
         <div className="Discuss_message_icon_button">
           <span  style={{ marginRight: '8px',margin:'10px' }}>{likes} {likes === 1 ? 'Like' : 'Likes'}</span>
-          <button className="ReplayDiscuss_message" onClick={handleLike}>
+          <button className="ReplayDiscuss_message_button" onClick={handleLike}>
           <FaThumbsUp style={{ marginRight: '8px', color: 'green', fontSize: '15px' }} /> Like</button>
         </div>
       
@@ -84,7 +84,7 @@ export function Discuss() {
       </div>  
       <div className="Discuss_message_icon_button">
           <span  style={{ marginRight: '8px',margin:'10px' }}>{likes} {likes === 1 ? 'Like' : 'Likes'}</span>
-          <button className="ReplayDiscuss_message" onClick={handleLike}>
+          <button className="ReplayDiscuss_message_button" onClick={handleLike}>
           <FaThumbsUp style={{ marginRight: '8px', color: 'green', fontSize: '15px' }} /> Like</button>
         </div>
       
@@ -97,7 +97,7 @@ export function Discuss() {
       </div>  
       <div className="Discuss_message_icon_button">
           <span  style={{ marginRight: '8px',margin:'10px' }}>{likes} {likes === 1 ? 'Like' : 'Likes'}</span>
-          <button className="ReplayDiscuss_message" onClick={handleLike}>
+          <button className="ReplayDiscuss_message_button" onClick={handleLike}>
           <FaThumbsUp style={{ marginRight: '8px', color: 'green', fontSize: '15px' }} /> Like</button>
         </div>
       
@@ -109,12 +109,12 @@ export function Discuss() {
 
             <div className="Discuss_inputbox CourseDiscuss_replaybox">
             <textarea
-        className='Discuss_inputbox_input'
+        className="Discuss_inputbox_input"
         onChange={handleChange}
         placeholder="Type something..."
         rows={1} 
       />
-         <button className="ReplayDiscuss_message"  style={{ marginRight: '8px' }} >
+         <button className="ReplayDiscuss_message_button"  style={{ marginRight: '8px' }} >
          <FaPaperPlane style={{ marginRight: '8px' }} />Send</button>
     </div>
         </div>

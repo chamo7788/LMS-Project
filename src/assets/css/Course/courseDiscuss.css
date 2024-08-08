@@ -1,7 +1,7 @@
 .Discuss_message{
     margin-top: 10px;
     padding: 10px;
-    margin-left: 10%;
+    margin-left: 5%;
     width: 80%;
     border-radius: 20px;
     border: 5px solid rgba(5, 42, 250, 0.344);
@@ -14,11 +14,12 @@
     margin-left: 30%;
     border-radius: 10px;
 }
-.ReplayDiscuss_message{
+.ReplayDiscuss_message_button{
+    
     margin-right: 10px;
     background-color: rgba(0, 0, 255, 0.129);
 }
-.ReplayDiscuss_message:hover{
+.ReplayDiscuss_message_button:hover{
     background-color: rgba(0, 0, 255, 0.545);
     color: aliceblue;
 }
@@ -26,7 +27,6 @@
 
 .Discuss_inputbox_input {
     width: 100%; 
-    max-width: 400px;
     min-height: 40px;
     max-height: 400px; 
     box-sizing: border-box; 
@@ -48,6 +48,7 @@
   
 
 .Discuss_inputbox{
+
     display: flex;
     gap: 10px; 
 }
