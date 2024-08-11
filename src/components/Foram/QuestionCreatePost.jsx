@@ -77,7 +77,7 @@ export function QuestionCreatePost({ onClose }) {
         <>
             <div className="background-blur"></div>
             <div className="question-create-container">
-                
+
                 <div className="question-create-top">
                     <p>Create Question</p>
                     <hr />

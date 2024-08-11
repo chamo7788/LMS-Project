@@ -14,7 +14,7 @@ export function AllCourses() {
                 const image = await import(`../../assets/images/${course.image}`).then(module => module.default);
                 return { ...course, image };
             }));
-            
+
             const groupedCourses = coursesWithImages.reduce((acc, course) => {
                 if (!acc[course.subject]) acc[course.subject] = [];
                 acc[course.subject].push(course);
@@ -22,7 +22,7 @@ export function AllCourses() {
             }, {});
 
             setCourses(groupedCourses);
-            
+
             const initialVisibleCounts = Object.keys(groupedCourses).reduce((acc, subject) => {
                 acc[subject] = 4;
                 return acc;
@@ -63,8 +63,8 @@ export function AllCourses() {
                     )}
                 </div>
             ))}
-            <Footer/>
+            <Footer />
         </div>
-       
+
     );
 }

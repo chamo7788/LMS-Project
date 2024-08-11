@@ -4,7 +4,7 @@ import ProPic from "../../assets/images/propic.png";
 
 
 export function Profilecards() {
-  
+
   return (
     <div className="card">
       <div className="profile-section">
@@ -27,7 +27,7 @@ export function Profilecards() {
           </a>
         </div>
         <button className="edit-button">Edit Profile</button>
-       
+
       </div>
     </div>
   );

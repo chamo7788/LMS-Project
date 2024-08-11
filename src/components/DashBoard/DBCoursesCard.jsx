@@ -23,8 +23,8 @@ export function DBCoursesCard({
           <p className="dbcard-subtitle">{subtitle}</p>
         </div>
         <div className="compelationbar">
-            <p>{percentageComplete}%</p>
-            <div className="complete"></div>
+          <p>{percentageComplete}%</p>
+          <div className="complete"></div>
         </div>
       </div>
     </Link>

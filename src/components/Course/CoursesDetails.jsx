@@ -6,7 +6,7 @@ import courses from "../../data/courses.json";
 import { Footer } from "../home/Footer/Footer.jsx";
 
 export function CourseDetails() {
-  
+
   const { courseId } = useParams(); // Get courseId from URL parameters
   const courseDetails = courses.find(course => course.courseId === courseId);
   const dispatch = useDispatch(); // Initialize dispatch
