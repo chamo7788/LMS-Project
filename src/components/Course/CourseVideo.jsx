@@ -5,7 +5,7 @@ import "../../assets/css/Course/courseVideo.css";
 import video from "../../assets/videos/v1.mp4";
 
 export function CourseVideo() {
-  
+
   return (
     <div className="video_page">
       <div className="path">
@@ -22,17 +22,17 @@ export function CourseVideo() {
         </Link>
       </div>
       <div className="video">
-      <video controls controlsList="nodownload" width="900" height="600">
+        <video controls controlsList="nodownload" width="900" height="600">
           <source src={video} type="video/mp4" />
-         {/* <track 
+          {/* <track 
             src={subtitles} 
             kind="subtitles" 
             srcLang="en" 
             label="English"
             default 
           />*/}
-         
-       </video>
+
+        </video>
         {/*<ReactPlayer 
           url={"https://www.youtube.com/watch?v=6gcaueR_TPg"} 
           light={true} 
@@ -40,9 +40,9 @@ export function CourseVideo() {
           height="400px" 
           width="700px" 
         />*/}
-       
-      </div> 
+
+      </div>
     </div>
-    
+
   );
 }
