@@ -19,6 +19,8 @@
     flex-direction: column; 
     margin-left: 40px;
     margin-top: 40px;
+    overflow-y: auto;  
+
 }
 
 .createImage {
@@ -71,7 +73,7 @@
     padding-top: 15px;  
     padding-bottom: 20px;  
     height: 55px;  
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 
 .clossicon {
@@ -178,15 +180,16 @@
 .uploadedFiles {
     display: grid;  
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
-    gap: 10px;  
-  }
+    gap: 10px;   
+     
+}
   
   .filePreview {
     position: relative;
     overflow: hidden;
     border-radius: 8px;  
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  
-    height: 150px;  
+    height: 220px;  
   }
   
   .fileImage,
@@ -197,36 +200,18 @@
   }
   
 .postedFiles {
-    display:  grid;   
+    display: grid;  
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
-    gap: 10px;  
-    padding: 10px;  
-    border-top: 1px solid rgba(255, 255, 255, 0.3);  
-    color: white;  
-}
+    gap: 20px;    
+    overflow-y: auto;  
+    overflow-x: auto; 
 
-.postedFilePreview {
-    padding: 10px; 
-    border: 1px solid rgba(255, 255, 255, 0.3);  
-    border-radius: 8px; 
-    background-color: rgba(255, 255, 255, 0.1);  
-}
+ 
 
-.deleteButton {
-    background-color: red;
-    justify-content: space-between;  
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 59px;
-    padding: 5px 10px;
-  }
-  
-  .deleteButton:hover {
-    opacity: 0.8;
-  }
-  
+}
+ 
+
+ 
 
 
 
