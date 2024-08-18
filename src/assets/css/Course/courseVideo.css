@@ -1,5 +1,4 @@
 .video_page{
-  margin-top: 8%;
   display: flex;
 }
 .video_page .h1{
@@ -8,18 +7,19 @@
 .video{
     display: flex;
     max-width: 90%;
-    align-items: center;
+    align-items: flex-end;
+    margin-left: 20%;
 }
 .video video {
     width: 100%; 
   }
 .path {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-top: -1%;
     font-size: 15px;
     color: #545353;
+    margin-left: 20%;
+    margin-top: 4%;
+
 }
   
 .path span {
