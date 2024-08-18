@@ -1,0 +1,11 @@
+{
+    "name": "Hasi",
+    "email": "1234@example.com",
+    "bio": "I am a student of Informatics Institute of Technology.",
+    "socialLinks": {
+        "facebook": "https://facebook.com",
+        "twitter": "https://twitter.com",
+        "instagram": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    }
+}
