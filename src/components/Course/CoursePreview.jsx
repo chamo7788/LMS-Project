@@ -8,11 +8,18 @@ import "../../assets/css/Course/CoursesPreview.css";
 export function CoursePreview() {
 
     const [activeTab, setActiveTab] = useState('Transcript');
+    const [handleAddNoteWithTimestamp, setHandleAddNoteWithTimestamp] = useState(null);
+
+    // This function will be passed to CourseVideo to capture handleAddNoteWithTimestamp
+    const setNoteHandler = (handler) => {
+        setHandleAddNoteWithTimestamp(() => handler);
+    };
 
     return (
         <>
-            <CourseVideo />
+            <CourseVideo onSetNoteHandler={setNoteHandler}/>
             <CourseLeftSidebar />
+          
 
             <div className="Preview">
                 <ul className="Preview-menu">
@@ -26,7 +33,7 @@ export function CoursePreview() {
                         <h1>import  like this " Discuss / "</h1>
                     </div>}
                     {activeTab === 'Note' && <div className="content-tab">
-                        <CourseNote />
+                            <CourseNote onAddNote={handleAddNoteWithTimestamp} />  {/* Render CourseNote with the handler */}  
                     </div>}
                     {activeTab === 'Downloads' && <div className="content-tab">
                         <h1>import  like this "  Discuss / "</h1>

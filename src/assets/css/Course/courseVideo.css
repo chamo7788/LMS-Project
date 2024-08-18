@@ -12,24 +12,36 @@
 }
 .video video {
     width: 100%; 
-  }
+
+  
 .path {
     display: flex;
     font-size: 15px;
     color: #545353;
     margin-left: 20%;
     margin-top: 4%;
-
 }
+
   
 .path span {
     margin: 0 5px;
 }
+  
 .path a {
     text-decoration: none;
-    transition: color 0.3s ease; 
-}
-.path a:hover {
-    color: #007bff; 
+    transition: color 0.3s ease;
 }
   
+.path a:hover {
+    color: #007bff;
+}
+  
+.video-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+  
+.video-container video {
+    width: 100%; 
+    height: auto;
+}
