@@ -1,20 +1,16 @@
-.home{
-    margin-top: 3%;
-    background-image: url(../../images/student.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-    padding-top: 20%;
-    padding-right: 50px; 
-    color:black;
-    text-align: left;
-    padding-left: 40px;
-
-  }
+.home {
+  background-color: #f9f9f9;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  padding-top: 20%;
+  padding-right: 50px;
+  color: black;
+  text-align: left;
+  padding-left: 40px;
+}
   .containers {
     max-width: 1200px;
     margin: 0 auto;
@@ -25,7 +21,15 @@
     font-size: larger;
     color: rgb(1, 55, 55);
   }
-  
+ 
+  .image_1 img{
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -8%;
+  }
   .row{
     width: 50%;
     font-size: 20px;
@@ -149,8 +153,73 @@
     }
     
   }
+  .subjects {
+    padding: 40px 20px;
+    background-color: #ffffff;
+  }
   
+  .subject-container2 {
+    text-align: center;
+  }
   
+  .subject-container2 h1 {
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    color: #333;
+  }
+  
+  .subject-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; 
+  }
+  
+  .subject-card2 {
+    display: flex;
+    width: 280px; 
+    height: 80px; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(70, 14, 94, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .subject-card2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .subject-card2 img {
+    width: 100px; 
+    height: 100%; 
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .subject-card2-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+    color: #333;
+  }
+  
+  .subject-card2-content h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .subject-card2-content p {
+    margin: 5px 5px 5px; 
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+
   
   .search-bar {
     display: flex;
