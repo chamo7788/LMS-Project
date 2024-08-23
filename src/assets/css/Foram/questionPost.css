@@ -6,6 +6,7 @@
     padding-top: 10px;
     border-radius: 15px;
     cursor: pointer;
+    border: var(--border-blue) 2px solid;
 }
 
 .question-post:hover {

@@ -1,117 +1,105 @@
-.container {
-    margin-left: 20%;
+.CourseDetailscontainer {
     background-color: #ffffff;
+    margin-left: 16vw;
+    padding: 2vw 0vw;
 }
 
 .image-container {
-    position: absolute;
-    margin-top: 4.5%;
-    width: 80%;
-    height: 40%;
+    margin-top: 5vh;
+    width: 100%;
+    height: auto;
     background-color: rgb(182, 204, 236);
-}
-
-.enroll-image {
-    display: contents;
-    filter: blur(2px);
-}
-
-.title {
-    font-size: 25px;
-    font-weight: bold;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
 }
 
 .course-topic {
-    position: absolute;
-    left: 10%;
-    top: 45%;
-    font-size: 45px;
+    font-size: 3vw;
+    margin-top: 2vh;
+    margin-left: 1vw;
 }
 
 .instructor {
-    position: absolute;
-    left: 10%;
-    top: 65%;
-    font-size: 20px;
+    font-size: 2vw;
+    margin-left: 1vw;
+    margin-top: 1vh;
 }
 
 .enroll-button {
-    position: absolute;
-    left: 80%;
-    top: 50%;
+    margin-left: auto;
+    margin-top: -2vh;
+    padding: 1vw 2vw;
+    font-size: 1vw;
 }
 
 .enroll-count {
-    position: absolute;
-    left: 78%;
-    top: 65%;
+    font-size: 1vw;
+    margin-top: 1vh;
+    margin-left: auto;
 }
 
-.besic {
-    position: absolute;
-    margin-left: 2%;
-    width: 75%;
-    height: 20%;
-    margin-top: 22%;
+.besic-box {
+    width: 100%;
+    height: auto;
     background-color: var(--white);
     border-radius: 6px;
+    border: var(--border-blue) 2px solid;
     box-shadow: rgb(26, 26, 26) 0px 30px 30px -20px;
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 1vw;
+    
 }
 
 .box {
     text-align: center;
-    padding: 20px;
+    padding: 1vw;
     border-radius: 5px;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
 }
 
-.box .rating {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.box .rating .star {
+.star {
     color: #ffc107;
-    /* Gold color */
-    font-size: 20px;
+    font-size: 1.5em;
+    margin-left: 0.5vw;
+}
+
+.main-text {
+    font-size: 1.5vw;
 }
 
 .sub-text-color {
     color: rgb(105, 109, 109);
-}
-
-.main-text {
-    font-size: 18px;
+    font-size: 1vw;
 }
 
 .container hr {
-    position: absolute;
-    width: 60%;
-    margin-left: 2%;
-    margin-top: 38%;
+    width: 100%;
+    margin: 2vh 0;
 }
 
 .details-menu {
-    position: absolute;
-    margin-top: 35%;
-    margin-left: 2%;
-    cursor: pointer;
     display: flex;
+    justify-content: space-around;
     list-style: none;
+    padding: 0;
+    margin-top: 4vh;
 }
 
 .details-menu-item {
-    margin: 0 20px;
-    font-size: 15px;
+    font-size: 1vw;
     cursor: pointer;
-    display: block;
-    text-decoration: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 1vw 2vw;
     color: #3e3d3d;
     transition: color 0.3s, box-shadow 0.3s;
 }
@@ -128,18 +116,8 @@
     background-color: rgb(44, 148, 233);
 }
 
-section {
-    padding: 20px;
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
 .section-content {
-    position: absolute;
-    margin-top: 40%;
+    margin-top: 4vh;
 }
 
 .section-content ul {
@@ -154,47 +132,37 @@ h2 {
 
 .section-content li:before {
     content: "✔";
-    margin-right: 10px;
+    margin-right: 1vw;
     color: green;
 }
 
 .skills {
-    position: absolute;
-    margin-top: 54%;
+    margin-top: 6vh;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 1vw;
 }
 
 .skill {
     background-color: #eee;
-    padding: 10px;
+    padding: 1vw;
     border-radius: 4px;
+    font-size: 1vw;
 }
 
 .module-container {
-    position: absolute;
-    width: 70%;
-    margin-top: 58%;
-    align-items: center;
+    width: 100%;
+    margin-top: 5vh;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    border-style: solid;
-    border-width: 2px;
-    border-color: #b0afaf;
-
-}
-
-.description {
-    position: relative;
-    margin-bottom: 20px;
+    border: var(--border-blue) 2px solid;
+    padding: 2vw;
 }
 
 .module {
     border-top: 1px solid #e0e0e0;
-    padding-top: 20px;
-    margin-top: 20px;
+    padding-top: 2vh;
+    margin-top: 2vh;
     background-color: #f3f7ff;
     border-radius: 8px;
 }
@@ -203,172 +171,169 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 1vw;
     cursor: pointer;
-
+}
+.module-head-title{
+    font-size: 2vw;
 }
 
 .module-title {
-    font-size: 20px;
-    
+    font-size: 1vw;
 }
 
 .module-info {
-    font-size: 14px;
+    font-size: 1vw;
     color: #666;
 }
 
 .module-details {
-    font-size: 14px;
+    font-size: 1vw;
     color: #0073e6;
 }
 
 .module-content {
-    display: block;
-    padding: 20px;
+    padding: 2vw;
 }
 
 .module-description {
-    margin: 10px 0;
+    margin: 1vh 0;
     color: #3e3d3d;
 }
 
 .module-content-inner {
     display: flex;
     justify-content: space-between;
-    margin: 10px 0;
+    margin: 1vh 0;
     color: #3e3d3d;
 }
 
 .module-content-inner div {
     text-align: center;
+    font-size: 1vw;
 }
 
 .module-content-inner div img {
-    display: block;
     margin: auto;
     width: 24px;
     height: 24px;
 }
+
 .course_footer {
-    margin-top: 45%;
+    margin-top: 5vh;
 }
 
-
-/* Mobile */
-@media (max-width: 1395px) {
-    .container {
-        margin-left: 60px;
-    }
-    .image-container {
-        width: 100%;
-        height: 40%; 
-    }
-    .besic {
-        width: 90%;
-        height: auto;
-        margin-top: 300px;
-    }
-    .details-menu {
-        margin-top: 470px;
-    }
-    .container hr{
-        margin-top: 505px;
-    }
-    .section-content {
-        margin-top: 530px;
-    }
-    .skills {
-        margin-top: 740px;
-    }
-    
-    .module-container {
-        width: 80%;
-        margin-top: 800px;
-    
-    }
-}
-
-
+/* Tablet view adjustments */
 @media (max-width: 768px) {
-    
-    .container {
-        margin-left: 0%;
+    .CourseDetailscontainer{
+        margin-left: 8vw;
     }
-
     .image-container {
-        width: 100%;
-        height: 50%;
-    }
-
-    .besic {
-        margin-left: 0%;
-        width: 100%;
-        height: 35%;
-        margin-top: 370px;
-        border-radius: 0px;
-        display: inline;
-        justify-content: space-between;
-        padding: 5px;
-        box-shadow: rgb(255, 255, 255) 0px 30px 30px -20px;
-        background-color: white;
-        align-items: left;
-    }
-
-    .box {
-        text-align: left;
-        margin-left: 4%;
-        padding: 10px;
+        padding: 5vw;
     }
 
     .course-topic {
-        left: 5%;
-        top: 30%;
+        font-size: 5vw;
     }
 
-    .instractor {
-        left: 5%;
-        top: 45%;
+    .instructor {
+        font-size: 2vw;
     }
 
     .enroll-button {
-        justify-content: center;
-        width: 90%;
-        height: 15%;
-        left: 5%;
-        top: 60%;
+        font-size: 2vw;
+        margin-top: -7vh;
     }
 
     .enroll-count {
-        left: 5%;
-        top: 80%;
-    }
-    .container hr{
-        margin-top: 660px;
-        width: 80%;
-    }
-    
-    .details-menu {
-        margin-top: 620px;
+        font-size: 2vw;
     }
 
-    .section-content {
-        margin-top: 680px;
+    .box {
+        padding: 2vw;
+        max-width: none;
     }
 
-    .skills {
-        margin-top: 910px;
+    .main-text {
+        font-size: 2vw;
     }
-    .module-container{
-        margin-top: 1050px;
-        width: 100%;
+
+    .sub-text-color {
+        font-size: 2vw;
     }
-    .main_sidebar {
-        display: none;
+
+    .details-menu-item {
+        font-size: 2vw;
     }
-    .course_footer{
-        margin-top: 110%;
+
+    .skill {
+        font-size: 2vw;
+    }
+
+    .module-title {
+        font-size: 2.5vw;
+    }
+
+    .module-info, .module-details {
+        font-size: 2vw;
+    }
+
+    .module-content-inner div {
+        font-size: 2vw;
     }
 }
 
+/* Mobile view adjustments */
+@media (max-width: 480px) {
+    .image-container {
+        padding: 10vw;
+    }
 
+    .course-topic {
+        font-size: 8vw;
+    }
+
+    .instructor {
+        font-size: 4vw;
+    }
+
+    .enroll-button {
+        font-size: 4vw;
+    }
+
+    .enroll-count {
+        font-size: 3vw;
+    }
+
+    .box {
+        padding: 3vw;
+    }
+
+    .main-text {
+        font-size: 4vw;
+    }
+
+    .sub-text-color {
+        font-size: 3vw;
+    }
+
+    .details-menu-item {
+        font-size: 4vw;
+    }
+
+    .skill {
+        font-size: 3vw;
+    }
+
+    .module-title {
+        font-size: 5vw;
+    }
+
+    .module-info, .module-details {
+        font-size: 3vw;
+    }
+
+    .module-content-inner div {
+        font-size: 3vw;
+    }
+}

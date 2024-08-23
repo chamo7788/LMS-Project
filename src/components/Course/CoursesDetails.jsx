@@ -41,7 +41,7 @@ export function CourseDetails() {
 
   return (
     <div>
-      <div className="container">
+      <div className="CourseDetailscontainer">
         <div className="image-container">
           <img src={courseDetails.image} alt="Course" />
           <h1 className="course-topic">{courseDetails.courseTitle}</h1>
@@ -55,7 +55,7 @@ export function CourseDetails() {
             <b>{courseDetails.enrollCount.toLocaleString()}</b> already enrolled
           </p>
         </div>
-        <div className="besic">
+        <div className="besic-box">
           <div className="box">
             <div className="rating">
               <p className="main-text">
@@ -117,7 +117,7 @@ export function CourseDetails() {
         </section>
         <section className="module-container" id="modules">
           <div className="description">
-            <div className="title">
+            <div className="module-head-title">
               There are {courseDetails.details.modules.length} modules in this course
             </div>
             <br />

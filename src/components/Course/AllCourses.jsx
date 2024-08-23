@@ -3,6 +3,7 @@ import "../../assets/css/Course/allCourses.css";
 import { CourseCard } from "./CourseCard";
 import coursesData from "../../data/courses.json"; // Adjust the path according to your project structure
 import { Footer } from "../home/Footer/Footer.jsx";
+import { ScrollToTopButton } from '../Foram/scroll-to-top';
 
 export function AllCourses() {
     const [courses, setCourses] = useState({});
@@ -40,31 +41,35 @@ export function AllCourses() {
     };
 
     return (
-        <div className="allCourse-containter">
-            {Object.keys(courses).map(subject => (
-                <div key={subject}>
-                    <div className="subject-title">{subject}</div>
-                    <div className="courses-container">
-                        {courses[subject].slice(0, visibleCounts[subject]).map((course, index) => (
-                            <CourseCard
-                                key={index}
-                                image={course.image}
-                                title={course.title}
-                                instructor={course.instructor}
-                                subtitle={course.subtitle}
-                                courseId={course.courseId}
-                            />
-                        ))}
+        <>
+            <div className="allCourse-containter">
+                {Object.keys(courses).map(subject => (
+                    <div key={subject}>
+                        <div className="subject-title">{subject}</div>
+                        <div className="courses-container">
+                            {courses[subject].slice(0, visibleCounts[subject]).map((course, index) => (
+                                <CourseCard
+                                    key={index}
+                                    image={course.image}
+                                    title={course.title}
+                                    instructor={course.instructor}
+                                    subtitle={course.subtitle}
+                                    courseId={course.courseId}
+                                />
+                            ))}
+                        </div>
+                        {visibleCounts[subject] < courses[subject].length && (
+                            <button className="show-more-button" onClick={() => showMoreCourses(subject)}>
+                                Show More
+                            </button>
+                        )}
                     </div>
-                    {visibleCounts[subject] < courses[subject].length && (
-                        <button className="show-more-button" onClick={() => showMoreCourses(subject)}>
-                            Show More
-                        </button>
-                    )}
-                </div>
-            ))}
-            <Footer />
-        </div>
+                ))}
 
+            </div>
+            <ScrollToTopButton />
+
+            <Footer />
+        </>
     );
 }
