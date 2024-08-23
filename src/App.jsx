@@ -8,6 +8,8 @@ import Courses from "./pages/Courses";
 import DashBoard from "./pages/DashBoard";
 import TestingPage from "./pages/TestingPage";
 import FindAnswers from "./pages/FindAnswers";
+import addcourses from "./pages/AddCourses";
+import AddCourses from "./pages/AddCourses";
 
 export default function App() {
   return (
@@ -22,6 +24,7 @@ export default function App() {
         <Route path="/dashBoard" element={<DashBoard />} />
         <Route path="/testingPage" element={<TestingPage />} />
         <Route path="/findAnswers/*" element={<FindAnswers />} />
+        <Route path="/addcourses" element={<AddCourses />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
