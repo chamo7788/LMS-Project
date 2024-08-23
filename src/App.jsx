@@ -8,7 +8,7 @@ import Courses from "./pages/Courses";
 import DashBoard from "./pages/DashBoard";
 import TestingPage from "./pages/TestingPage";
 import FindAnswers from "./pages/FindAnswers";
-import addcourses from "./pages/AddCourses";
+
 import AddCourses from "./pages/AddCourses";
 
 export default function App() {
