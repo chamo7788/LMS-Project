@@ -116,3 +116,18 @@
     color: #333;
     font-size: large;
 }
+.Add_course_Skill_div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Add_course_Skill_P{
+    margin-left: 5%;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 2px solid #ff0000;
+    border-radius: 20px;
+    padding: 10px;
+    color: #333;
+    font-size: large;
+}

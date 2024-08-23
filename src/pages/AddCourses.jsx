@@ -17,7 +17,11 @@ export default function AddCourses() {
 
   //video
 
+//   const [divvideo, set_v_Divs] = useState([]);
 
+//   const add_v_Div = () => {
+//     set_v_Divs([...divvideo, divvideo.length]);
+//   };
 const [v_divs, v_setDivs] = useState([]);
 
 const v_addDiv = () => {
@@ -36,9 +40,9 @@ const handlevideoChange = (v_index, v_event) => {
 };
 
 const handleTextv_Change = (v_index, v_event) => {
-    const text = v_event.target.value;
+    const v_text = v_event.target.value;
     const updatedDivs = divs.map((v_div, i) =>
-      i === v_index ? { ...v_div, text } : v_div
+      i === v_index ? { ...v_div, v_text } : v_div
     );
     setDivs(updatedDivs);
   };
@@ -102,6 +106,24 @@ const [number1, Hrs] = useState('');
     }
   };
 
+  //skill text
+  const [inputText, setInputText] = useState('');
+  const [messages, setMessages] = useState([]);
+
+  const SkillsChange = (event) => {
+    setInputText(event.target.value);
+  };
+
+  const handleSkillKeyPress = (event) => {
+    if (event.key === 'Enter' && inputText.trim() !== '') {
+      setMessages([...messages, inputText]);
+      setInputText('');
+    }
+  };
+
+
+
+
   return (
 
     <div>
@@ -159,7 +181,22 @@ const [number1, Hrs] = useState('');
       {image && <img src={image} alt="Selected" style={{ marginTop: '25px', maxWidth: '100%'}} />}
     </div>
 
-
+    <div >
+    <h2 className="Add_course_texth2">Skills</h2>
+      <input
+        type="text"
+        className="Add_course_inputBox"
+        value={inputText}
+        onChange={SkillsChange}
+        onKeyPress={handleSkillKeyPress}
+        placeholder="Type a skill and press Enter"
+      />
+      <div className="Add_course_Skill_div">
+        {messages.map((message, index) => (
+          <p className="Add_course_Skill_P" key={index}>{message}</p>
+        ))}
+      </div>
+    </div>
 
 
     </div>
@@ -180,7 +217,6 @@ const [number1, Hrs] = useState('');
 
 
 {/* video */}
-
 <div>
       
       {v_divs.map((v_div, v_index) => (
@@ -216,11 +252,11 @@ const [number1, Hrs] = useState('');
           )}
         </div>
       ))}
-<button className="Add_course_button" onClick={v_addDiv}>Add Video Section</button>
+      <button className="Add_course_button" onClick={v_addDiv}>Add Video Section</button>
 </div>
 
-
     </div>
+
     <div className="Add_course_pdf_input_box">
     <h2 className="Add_course_texth2">Upload PDF here </h2>
 
@@ -229,7 +265,7 @@ const [number1, Hrs] = useState('');
       <button className="Add_course_button"  onClick={handleUpload}>Upload PDF</button>
     </div>
     </div>
-        </div>
+</div>
       ))}
       <br /><br />
 
