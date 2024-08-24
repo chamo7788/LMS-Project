@@ -189,6 +189,24 @@ function CreatePost({ onClose }) {
             onChange={(e) => setPostContent(e.target.value)}  
           />
         </div>
+
+        <div className="uploadedFilesContainer">
+          <div className="uploadedFiles">
+            {fileUrls.map((fileUrl, index) => (
+              <div key={index} className="filePreview">
+                {fileUrl.endsWith('.mp4') ? (  
+                  <video controls className="fileVideo">
+                    <source src={fileUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                ) : (
+                  <img src={fileUrl} alt={`Uploaded file ${index}`} className="fileImage" />
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="createBottom">
           <input
             type="file"
@@ -215,26 +233,9 @@ function CreatePost({ onClose }) {
           </button>
         </div>
 
-        <div className="uploadedFilesContainer">
-          <h3>Uploaded Files</h3>
-          <div className="uploadedFiles">
-            {fileUrls.map((fileUrl, index) => (
-              <div key={index} className="filePreview">
-                {fileUrl.endsWith('.mp4') ? (  
-                  <video controls className="fileVideo">
-                    <source src={fileUrl} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                ) : (
-                  <img src={fileUrl} alt={`Uploaded file ${index}`} className="fileImage" />
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
+         
 
         <div className="postedFilesContainer">
-          <h3>Posted Files</h3>
           <div className="postedFiles">
             {postedFiles.map((post, postIndex) => (
               <div key={postIndex} className="postedFilePreview">
