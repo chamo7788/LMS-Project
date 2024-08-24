@@ -61,34 +61,33 @@
     .row{
       width: 100%;
     }
+    .image_1 img{
+      display: none;
+    }
     
   }
-  
   .about-us {
     background-image: url(../../images/student2.jpg);
     background-size: cover;
     background-attachment: fixed;
-    top: 0;
-    right: 0;
     z-index: -1;
     width: 100%;
-    height: 105vh;
-    padding-top: 20%;
-    padding-right: 50px;
+    height: 100vh;
+    padding: 10% 5%;
     color: black;
     text-align: left;
-    padding-left: 40px;
     position: relative;
   }
-  .container2{
-    margin: 0px 400px;
-    padding: 0px 20px;
-    width: 170%;
-    
+  
+  .container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-left: 20%;
+    margin-top: -10%;
   }
   
   .about-us .row2 {
-    width: 80%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -101,14 +100,10 @@
     font-size: 16px;
     color: #333;
     line-height: 1.6;
-    background: rgba(255, 255, 255, 0.8); 
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
-    margin-top: -15%;
-    margin-right: 50%;
-    
-    
-  
+    margin-right: 5%;
   }
   
   .about-us .content h1 {
@@ -123,7 +118,7 @@
   }
   
   .about-us .content ul {
-    list-style-type: disc;
+    list-style-type: none;
     padding-left: 20px;
   }
   
@@ -134,25 +129,66 @@
   .about-us .image {
     flex: 1;
     text-align: right;
+    margin-left: 5%;
   }
-  @media screen and (max-width: 768px) {
   
-    .about-us{
-      padding-top: 60%;
-      height: 120vh;
-      
-      
-    }
-    .about-us .content{
-      position:absolute;
-      margin-top: 6%;
-      margin-bottom: 6%;
-      margin-left: 0%;
-      width:100%;
-      
-    }
-    
+  .about-us .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+  
+  @media screen and (max-width: 1200px) {
+    .container2 {
+      margin: 0 auto;
+      padding: 0 2%;
+      width: 100%;
+    }
+  
+    .about-us .row2 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-us .content {
+      margin: 0 auto;
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .about-us .image {
+      display: none;
+    }
+  
+    .about-us {
+      height: auto;
+      padding: 5% 2%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-us {
+      padding-top: 20%;
+      height: auto;
+    }
+  
+    .about-us .content {
+      width: 100%;
+    }
+  
+    .about-us .row2 {
+      flex-direction: column;
+    }
+  
+    .about-us .image {
+      display: none;
+    }
+  }
+    
+ 
+    
+
   .subjects {
     padding: 40px 20px;
     background-color: #ffffff;
@@ -178,8 +214,10 @@
   .subject-card2 {
     display: flex;
     width: 280px; 
-    height: 80px; 
+    height: 90px; 
     border-radius: 8px;
+    border: 2px solid transparent;
+    border-color: #0b3c4d;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(70, 14, 94, 0.1);
     background-color: #fff;
@@ -189,6 +227,9 @@
   .subject-card2:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #89bbf1; 
+    color: white; 
+    border-color: #0056b3;
   }
   
   .subject-card2 img {
@@ -218,8 +259,6 @@
     font-size: 0.9rem;
     color: #666;
   }
-  
-
   
   .search-bar {
     display: flex;
