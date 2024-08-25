@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { LeftSideBar, Navbar, Subjects, QuestionPost, QuestionCreatePost, ParentComponent } from "../components";
+import { LeftSideBar, Navbar, QuestionPost, ParentComponent } from "../components";
 
 
 export default function Foram(){

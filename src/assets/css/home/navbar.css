@@ -24,8 +24,11 @@ body {
   z-index: 1000;
   padding-right: 5%;
   /* justify-content: flex-end; */
+  /*border: var(--border-blue) 2px solid;*/
+
 
 }
+
 /* .navbar__logo{
   position: fixed;
   align-items: end;
@@ -38,14 +41,14 @@ body {
 /* Logout Button Styling */
 .navbar__logout-button {
   position: absolute;
-  background-color: rgba(33, 149, 203, 0.708);
+  background-color: rgba(36, 135, 227, 0.708);
   color: white;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   margin-top: 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s;  
 }
 
 .navbar__logout-button:hover {
@@ -54,19 +57,20 @@ body {
 }
 
 
-
 @media (max-width:1395px) {
-  .navbar__logo{
+  .navbar__logo {
     position: fixed;
     align-items: end;
     padding-left: 5%;
     left: 0;
-    background-color:transparent;
+    background-color: transparent;
   }
-  .navbar__menu-item{
+
+  .navbar__menu-item {
     display: none;
   }
-  .navbar__searchbox{
+
+  .navbar__searchbox {
     width: 40%;
     justify-content: space-between;
   }
@@ -101,19 +105,22 @@ body {
   text-decoration: none;
   border-radius: 0.5rem;
   padding: 0.5rem;
-  color: #3e3d3d;
+  color: #45547ae8;
   transition: color 0.3s, box-shadow 0.3s;
 }
 
-.navbar__menu-link:hover{
+.navbar__menu-link:hover {
   box-shadow: rgb(26, 26, 26) 0 30px 30px -20px;
-  color:white;
-  background-color: rgba(255, 255, 255, .1);
+  color: rgb(13, 106, 245);
+  background-color: rgba(255, 255, 255, 0.692);
+
 }
+
 .navbar__menu-link.active {
-  box-shadow: rgb(26, 26, 26) 0 30px 30px -20px;
-  color:white;
-  background-color: rgba(255, 255, 255, .1);
+  
+  color: rgb(22, 86, 226);
+  background-color: rgba(159, 209, 247, 0.508);
+  border-bottom: var(--border-blue) 4px solid;
 }
 
 /* Navbar Icons Container */
@@ -148,6 +155,7 @@ body {
 .navbar__social-icon:hover {
   color: black;
 }
+
 /* Search Box Styling */
 .navbar__searchbox {
   display: flex;
@@ -177,6 +185,7 @@ body {
   width: 20px;
   cursor: pointer;
   color: #fff;
+
 }
 
 /* Login Button Styling */
@@ -187,13 +196,15 @@ body {
 }
 
 .navbar__login-button {
-  display: block;            /*  this depend on .Login_pic{  */
-  background-color: #3e3d3d;
+  display: block;
+  /*  this depend on .Login_pic{  */
+  background-color: var(--border-blue);
   color: white;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  border: var(--border-blue) 2px solid;
   transition: background-color 0.3s;
 }
 
@@ -201,17 +212,19 @@ body {
   background-color: black;
   color: white;
 }
+
 /* user profile pictures */
 
-.Login_pic{
-  display: block;        /*  this depend on .navbar__login-button { */
+.Login_pic {
+  display: block;
+  /*  this depend on .navbar__login-button { */
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  transition: border-radius 0.5s; 
+  transition: border-radius 0.5s;
 }
 
-.Login_pic:hover{
+.Login_pic:hover {
   border-radius: 20%;
   width: 50px;
   height: 50px;
@@ -220,7 +233,7 @@ body {
 /* Message Icon Styling */
 .navbar__message {
   margin-right: 40px;
- 
+
 }
 
 .navbar__message-icon {
@@ -230,7 +243,7 @@ body {
   transition: color 0.3s;
   align-self: flex-end;
   padding: 10px;
-  
+
 }
 
 .navbar__message-icon:hover {
@@ -252,6 +265,7 @@ body {
     flex-direction: row;
     align-items: flex-start;
   }
+
   .logo {
     margin-left: -5%;
     width: 210px;
@@ -285,24 +299,27 @@ body {
     margin-left: -10%;
 
   }
-  
+
 
   .navbar__login {
     display: block;
     flex-direction: row;
     margin-right: -1%;
   }
-  .navbar__message{
+
+  .navbar__message {
     display: none;
   }
-  .navbar__social-icon{
+
+  .navbar__social-icon {
     display: none;
   }
 
   .navbar__icons {
     flex-direction: column;
   }
-  .navbar__logo{
+
+  .navbar__logo {
     position: absolute;
     top: 7%;
     background-color: transparent;

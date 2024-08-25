@@ -19,19 +19,50 @@
 
 .dropdown-subjects,
 .dropdown-sort select {
-    width: 150px;
+    width: 180px;
     height: 40px;
     background-color: #fff;
     border-radius: 25px;
-    color: rgba(0, 0, 0, 0.879);
+    color: #333;
     font-weight: bold;
     font-size: 15px;
     text-align: center;
     cursor: pointer;
     border: 2px solid var(--border-blue);
-    
+    transition: all 0.3s ease;
+    padding: 0 10px;
+    appearance: none; /* Hide default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
 }
 
+.dropdown-subjects:after,
+.dropdown-sort select:after {
+    content: '\f078'; /* FontAwesome down arrow */
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    color: #333;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.dropdown-subjects:hover,
+.dropdown-sort select:hover {
+    border-color: #1864d6;
+}
+
+.dropdown-subjects:focus,
+.dropdown-sort select:focus {
+    outline: none;
+    border-color: #1864d6;
+    box-shadow: 0 0 5px rgba(24, 100, 214, 0.5);
+}
+
+/* Style for Options */
 .options {
     background-color: #6da0ed;
     color: rgba(0, 0, 0, 0.879);
@@ -40,8 +71,7 @@
     border-radius: 25px;
     cursor: pointer;
     border: 2px solid var(--border-blue);
-    
-    
+    padding: 5px 10px;
 }
 
 .options:hover {
@@ -49,9 +79,24 @@
     color: rgba(255, 247, 247, 0.879);
 }
 
-.dropdown-sort select:focus,
-.dropdown-subjects:focus {
-    outline: none;
+/* Additional Styling */
+.dropdown-subjects option,
+.dropdown-sort select option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+}
+
+.dropdown-subjects option:hover,
+.dropdown-sort select option:hover {
+    background-color: #e0e7ff;
+    color: #1864d6;
+}
+
+/* For older browsers */
+.dropdown-subjects::-ms-expand,
+.dropdown-sort select::-ms-expand {
+    display: none; /* Hide default dropdown arrow in IE */
 }
 
 .create-question {
