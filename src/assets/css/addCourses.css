@@ -1,17 +1,16 @@
-.Add_course_h1{
-    background-color:rgba(0, 21, 255, 0.427);
+.Add_course_h1 {
+    background-color: rgba(0, 21, 255, 0.427);
     border-radius: 10px;
     text-align: center;
     padding: 10px;
 }
-.Add_course_texth2{
-    padding: 2%;
-    padding-left: 5%;
+.Add_course_texth2 {
+    padding: 2% 2% 2% 5%;
 }
-.Add_course_texth3{
+.Add_course_texth3 {
     padding: 2%;
 }
-.Add_course_new_div{
+.Add_course_new_div {
     margin-left: 10%;
     padding-left: 5%;
     margin-top: 1%;
@@ -29,11 +28,13 @@
     background-color: #007bff;
     color: rgb(0, 0, 0);
     border-radius: 5px;
-    display: flex;               /* Add Flexbox */
-    align-items: center;         /* Center vertically */
-    justify-content: center;     /* Center horizontally */
-  }
-  
+    display: flex;
+    /* Add Flexbox */
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+}
 .Add_course_button:hover {
     background-color: #0056b3;
     color: aliceblue;
@@ -42,85 +43,86 @@
 .Add_course_textarea {
     min-width: 90%;
     max-width: 95%;
+    min-height: 70px;
     padding: 10px;
     border: 2px solid #0d00ffa4;
     border-radius: 10px;
 }
-.Add_course_inputBox{
+.Add_course_inputBox {
     width: 90%;
     padding: 10px;
     border: 2px solid #0d00ffa4;
     border-radius: 10px;
 }
 
-.Add_course_Time_box_div{
-    display: flex;        
-    flex-wrap: wrap;        
-    gap: 20px;             
+.Add_course_Time_box_div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
 }
 .Add_course_Time_box_div_input {
-    padding: 10px;          
-    border: 2px solid #0d00ffa4; 
-    border-radius: 10px;   
-    width: 100px;            
-  }
-.Add_course_wallImage{
+    padding: 10px;
+    border: 2px solid #0d00ffa4;
+    border-radius: 10px;
+    width: 100px;
+}
+.Add_course_wallImage {
     margin: 2%;
     max-width: 500px;
     border: 2px solid #0d00ffa4;
     padding: 10px;
     border-radius: 10px;
 }
-.Add_course_image_input_box{
+.Add_course_image_input_box {
     color: #ff0b0b;
 }
-.Add_course_module_text{
+.Add_course_module_text {
     margin-left: 30%;
     font-weight: bold;
     color: #333;
     font-size: x-large;
 }
-.Add_course_new_Smalldiv{
+.Add_course_new_Smalldiv {
     align-items: center;
-    width: auto;
     margin: 5px;
-    width: 90px;
+    width: 80%;
     padding: 10px;
     border-radius: 10px;
     background-color: #007bff5c;
     margin-right: 4%;
 }
-.Add_course_modCount{
-    display: flex;        
+.Add_course_modCount {
+    display: flex;
     flex-wrap: wrap;
 
 }
-.Add_course_video_input_box{
+.Add_course_video_input_box {
     margin-top: 10px;
     max-width: 500px;
     border: 2px solid #0d00ffa4;
     padding: 10px;
     border-radius: 10px;
 }
-.Add_course_pdf_input_box{
+.Add_course_pdf_input_box {
     margin-top: 10px;
     max-width: 500px;
     border: 2px solid #0d00ffa4;
     padding: 10px;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
-.Add_course_Video_text{
+.Add_course_Video_text {
     margin-left: 10%;
     font-weight: bold;
     color: #333;
     font-size: large;
 }
-.Add_course_Skill_div{
+.Add_course_Skill_div {
     display: flex;
     flex-wrap: wrap;
 }
-.Add_course_Skill_P{
+.Add_course_Skill_P {
+    min-width: 20%;
     margin-left: 5%;
     margin-top: 10px;
     font-weight: bold;
@@ -130,4 +132,14 @@
     padding: 10px;
     color: #333;
     font-size: large;
+    text-align: center;
+}
+.Question_text_input{
+    width: 80%;
+    padding: 5px;
+    border: 2px solid #0d00ffa4;
+    border-radius: 5px;
+    max-width: 100%; 
+    min-width: 100%; 
+    min-height: 100px;
 }
