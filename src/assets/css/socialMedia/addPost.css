@@ -8,7 +8,7 @@
 .addPost{
     width: 50%;
     border-radius: 10px;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: 28%;
     -webkit-box-shadow: -2px -1px 15px 2px rgba(0,0,0,0.52); 
     box-shadow: -2px -1px 15px 2px rgba(0,0,0,0.52);
@@ -47,7 +47,7 @@
 
 .addPostOptions{
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .addPostOption1{
@@ -55,7 +55,7 @@
     align-items: center;
     margin-right: 15px;
     cursor: pointer;
-    top: 5px;
+    top: 2px;
 }
 
 .addPostOption2{

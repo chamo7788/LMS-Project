@@ -6,7 +6,7 @@
     left: 50%;  
     transform: translate(-50%, -50%);  
     width: 1000px; 
-    height: 500px;
+    height: 390px;
     max-width: 90%;  
     background-color: rgba(14, 14, 14, 0.9);  
     border-radius: 8px;  
@@ -107,18 +107,18 @@
 .addPostInput2 {
     margin: 10px 5%;  
     width: 90%; 
-    height: 50px;  
+    height: 90px;  
     padding: 10px;  
     box-sizing: border-box;  
     font-size: 14px;  
     border: 1px solid #ccc; 
     border-radius: 5px;  
-    background-color: white;  
-    color: black;  
+    background-color: rgb(40, 40, 40);  
+    color: rgb(244, 244, 244);  
 }
 
 .addPostInput2::placeholder {
-    color: rgba(0, 0, 0, 0.5); 
+    color: rgb(212, 212, 212); 
     font-style: italic;  
     opacity: 1;  
 }
@@ -205,14 +205,8 @@
     gap: 20px;    
     overflow-y: auto;  
     overflow-x: auto; 
-
- 
-
 }
  
-
- 
-
 
 
 
