@@ -6,7 +6,7 @@
     left: 50%;  
     transform: translate(-50%, -50%);  
     width: 1000px; 
-    height: 390px;
+    height: 300px;
     max-width: 90%;  
     background-color: rgba(14, 14, 14, 0.9);  
     border-radius: 8px;  
@@ -107,7 +107,7 @@
 .addPostInput2 {
     margin: 10px 5%;  
     width: 90%; 
-    height: 90px;  
+    height: 50px;  
     padding: 10px;  
     box-sizing: border-box;  
     font-size: 14px;  
