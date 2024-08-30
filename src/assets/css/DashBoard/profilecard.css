@@ -1,24 +1,43 @@
 .card {
   background-color: #1382c7;
   color: black;
-  padding: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
   border-radius: 10px;
-  text-align: center;
-  width: 300px;
+  width: 790px;
+  height: 280px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 300px;
-  margin-left: 950px;
+  margin-top: 115px;
+  margin-left: 300px;
 }
 
 .profile-section {
+  position: relative;
+  width: 650px;
+  height: 240px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-photo {
+  position: relative;
+  margin-top: 40px;
+  height: 200px;
+  width: 300px;
+  text-align: center;
+}
+
+.profile-detail {
+  position: relative;
+  margin-top: 20px;
+  height: 240px;
+  width: 300px;
+  text-align: center;
 }
 
 .profile-image {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
@@ -41,14 +60,19 @@
   text-decoration: none;
 }
 
-.edit-button {
+.social-links i {
+  margin-top: 10px;
+}
+
+.edit-profile-button {
+  position: relative;
   background-color: rgba(255, 255, 255, 0.603);
   color: #05101d;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  margin: 10px 0;
+  margin: 20px 90px;
 }
 
 .edit-button:hover {
@@ -57,7 +81,7 @@
 
 .email-link {
   color: white;
-  text-decoration:wavy;
+  text-decoration: wavy;
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 10px;

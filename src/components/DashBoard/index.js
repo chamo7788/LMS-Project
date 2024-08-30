@@ -4,3 +4,4 @@ export * from './TodoList';
 export * from './Profilecards';
 export * from './DBCoursesCard';
 export * from './DBCourses';
+export * from './EditProfile';

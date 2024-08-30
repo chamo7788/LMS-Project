@@ -9,25 +9,29 @@ export function Profilecards() {
   return (
     <div className="card">
       <div className="profile-section">
-        <img src={ProPic} alt={name} className="profile-image" />
-        <h1>HELLO, I'M <br />{name}</h1>
-        <p>{bio}</p>
-        <a href={`mailto:${email}`} className="email-link"><b>{email}</b></a>
-        <div className="social-links">
-          <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-facebook"></i>
-          </a>
-          <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin"></i>
-          </a>
+        <div className="profile-photo">
+          <img src={ProPic} alt={name} className="profile-image" />
         </div>
-        <button className="edit-button">Edit Profile</button>
+        <div className="profile-detail">
+          <h1>HELLO, I'M <br />{name}</h1>
+          <p>{bio}</p>
+          <a href={`mailto:${email}`} className="email-link"><b>{email}</b></a>
+          <div className="social-links">
+            <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-facebook"></i>
+           </a>
+            <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-linkedin"></i>
+            </a>
+            <button className="edit-profile-button">Edit Profile</button>
+          </div>
+        </div>
       </div>
     </div>
   );
