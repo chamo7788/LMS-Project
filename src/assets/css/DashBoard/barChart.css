@@ -1,4 +1,4 @@
-.barchart{
+.barchart {
     position: relative;
     width: 500px;
     height: auto;
@@ -9,29 +9,33 @@
     padding-bottom: 25px;
     margin: auto;
 }
-.chart{
+
+.chart {
     background: #bbe8ea;
     padding: 7px 10px 0px 8px;
     border-radius: 10px;
     font-size: larger;
 }
-.bardata{
+
+.bardata {
     font-size: 15px;
 }
-.bar{
-    fill:#8883d8;
+
+.bar {
+    fill: #8883d8;
 }
+
 /* this is used for full page */
- .charts{
+.charts {
     display: flex;
     justify-content: space-between;
-    padding-top: 30%;
-    padding-left: 25%;
+    padding-top: 5%;
+    padding-left: 7%;
     padding-right: 10%;
- }
+}
 
- @media (max-width:1395px){
-    .charts{
+@media (max-width:1395px) {
+    .charts {
         padding-left: 11%;
     }
 }
