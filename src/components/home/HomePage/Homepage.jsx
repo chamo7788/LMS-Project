@@ -13,33 +13,33 @@ import E from "../../../assets/images/E.jpg"
 import L from "../../../assets/images/L.jpg"
 import IT from "../../../assets/images/IT.jpg"
 
-export function Homepage(){
-  return(
-   <>
-    <section className='home'>
+export function Homepage() {
+  return (
+    <>
+      <section className='home'>
         <div className='containers'>
-            <div className='row'>
-              <div className='image_1'>
-                <img src={image} alt='' />
-              </div>
-                <div className='title'>
-                    <h1>Welcome to Learn Hub</h1>
-                </div>
-                <p>Our platform is designed to provide you with an engaging, intuitive, and effective learning experience.</p>
-                <div className='button'>
-                    <button className='primary-btn'>
-                    Get Started Now <i className='fa fa-long-arrow-alt-right'></i>
-                    </button>
-          
-                    <button className='primary-btn'>
-                        View Courses<i className='fa fa-long-arrow-alt-right'></i>
-                    </button>
-                </div>
+          <div className='row'>
+            <div className='image_1'>
+              <img src={image} alt='' />
             </div>
-        </div>
-    </section>
+            <div className='title'>
+              <h1>Welcome to Learn Hub</h1>
+            </div>
+            <p>Our platform is designed to provide you with an engaging, intuitive, and effective learning experience.</p>
+            <div className='button'>
+              <button className='primary-btn'>
+                Get Started Now <i className='fa fa-long-arrow-alt-right'></i>
+              </button>
 
-    <section className='about'>
+              <button className='primary-btn'>
+                View Courses<i className='fa fa-long-arrow-alt-right'></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='about'>
         <div className='about-us'>
           <div className='container2'>
             <div className='row2'>
@@ -66,72 +66,69 @@ export function Homepage(){
                   <li>Earn certificates of completion to showcase your learning.</li>
                   <li>Explore new interests and hobbies.</li>
                 </ul>
-               
+
               </div>
-            
+
             </div>
           </div>
         </div>
       </section>
 
       <section className='subjects'>
-  <div className='subject-container2'>
-    <h1>Explore Subjects</h1>
-    <div className='subject-grid'>
-      <Link to='/' className='subject-card2'>
-        <img src={DS} alt='Data Science' />
-        <h2>Data Science</h2>
-      </Link>
-      <Link to='/' className='subject-card2'>
-        <img src={B} alt='Business' />
-        <h2>Business</h2>
-      </Link>
-      <Link to='/' className='subject-card2'>
-        <img src={CS} alt='Computer Science' />
-        <h2>Computer Science</h2>
-      </Link>
-      <Link to='/' className='subject-card2'>
-        <img src={H} alt='Health' />
-        <h2>Health</h2>
-      </Link>
-      <Link to='/' className='subject-card2'>
-        <img src={S} alt='Social Sciences' />
-        <h2>Social Sciences</h2>
-      </Link>
-      <Link to='/' className='subject-card2'>
-        <img src={P} alt='Personal Development' />
-        <h2>Personal Development</h2>
-      </Link>
-      <Link to='/' className='subject-card2'>
-        <img src={R} alt='Arts and Humanities' />
-        <h2>Arts and Humanities</h2>
-      </Link>
-      <Link to='/' className='subject-card2'>
-        <img src={E} alt='Engineering' />
-        <h2>Engineering</h2>
-      </Link>
-      <Link to='/' className='subject-card2'>
-        <img src={L} alt='Language Learning' />
-        <h2>Language Learning</h2>
-      </Link>
-      <Link to='/' className='subject-card2'>
-        <img src={IT} alt='Information Technology' />
-        <h2>Information Technology</h2>
-      </Link>
-    </div>
-  </div>
-</section>   
-  <section className='search'>
-  <div className='search-bar'>
-      <i className='fas fa-search search-icon'></i>
-        <input type='text' className='search-input' placeholder='Search courses...' />
-      </div>
+        <div className='subject-container2'>
+          <h1>Explore Subjects</h1>
+          <div className='subject-grid'>
+            <Link to='/' className='subject-card2'>
+              <img src={DS} alt='Data Science' />
+              <h2>Data Science</h2>
+            </Link>
+            <Link to='/' className='subject-card2'>
+              <img src={B} alt='Business' />
+              <h2>Business</h2>
+            </Link>
+            <Link to='/' className='subject-card2'>
+              <img src={CS} alt='Computer Science' />
+              <h2>Computer Science</h2>
+            </Link>
+            <Link to='/' className='subject-card2'>
+              <img src={H} alt='Health' />
+              <h2>Health</h2>
+            </Link>
+            <Link to='/' className='subject-card2'>
+              <img src={S} alt='Social Sciences' />
+              <h2>Social Sciences</h2>
+            </Link>
+            <Link to='/' className='subject-card2'>
+              <img src={P} alt='Personal Development' />
+              <h2>Personal Development</h2>
+            </Link>
+            <Link to='/' className='subject-card2'>
+              <img src={R} alt='Arts and Humanities' />
+              <h2>Arts and Humanities</h2>
+            </Link>
+            <Link to='/' className='subject-card2'>
+              <img src={E} alt='Engineering' />
+              <h2>Engineering</h2>
+            </Link>
+            <Link to='/' className='subject-card2'>
+              <img src={L} alt='Language Learning' />
+              <h2>Language Learning</h2>
+            </Link>
+            <Link to='/' className='subject-card2'>
+              <img src={IT} alt='Information Technology' />
+              <h2>Information Technology</h2>
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section className='search'>
+        <div className='search-bar'>
+          <i className='fas fa-search search-icon'></i>
+          <input type='text' className='search-input' placeholder='Search courses...' />
+        </div>
 
-    </section>  
-
-    
-  
-   </>
+      </section>
+    </>
 
   );
 }

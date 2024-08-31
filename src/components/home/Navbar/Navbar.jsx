@@ -53,9 +53,8 @@ export function Navbar() {
         </NavLink>
       </div>
       <ul
-        className={`navbar__menu ${
-          isMobileMenuOpen ? "navbar__menu--active" : ""
-        }`}
+        className={`navbar__menu ${isMobileMenuOpen ? "navbar__menu--active" : ""
+          }`}
       >
         <li className="navbar__menu-item">
           <NavLink
