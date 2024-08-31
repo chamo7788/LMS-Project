@@ -5,3 +5,4 @@ export * from './Profilecards';
 export * from './DBCoursesCard';
 export * from './DBCourses';
 export * from './EditProfile';
+export * from './DBPreview';
