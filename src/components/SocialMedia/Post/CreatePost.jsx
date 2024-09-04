@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../../../assets/css/socialMedia/createPost.css";
 import dp from '../../../assets/images/5142.jpg';
 import PeopleIcon from '@mui/icons-material/People';
@@ -19,16 +19,19 @@ function CreatePost({ onClose }) {
   const [postContent, setPostContent] = useState('');
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [fileUrls, setFileUrls] = useState([]);
-  const [isPosted, setIsPosted] = useState(false);  
+  const [isPosted, setIsPosted] = useState(false);
 
   const handlePostClick = () => {
     const confirmPost = window.confirm('Are you sure you want to post this?');
     if (confirmPost) {
+      const now = new Date();
+      const timestamp = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
+      
       alert('Posted this post!');
 
       setPostedFiles(prevFiles => [
         ...prevFiles,
-        { content: postContent, files: fileUrls }
+        { content: postContent, files: fileUrls, timestamp }
       ]);
 
       setPostContent('');
@@ -88,6 +91,12 @@ function CreatePost({ onClose }) {
   const handleAddPhotoClick = () => {
     document.getElementById('file-input').click();
   };
+
+  useEffect(() => {
+    return () => {
+      fileUrls.forEach(url => URL.revokeObjectURL(url));
+    };
+  }, [fileUrls]);
 
   return (
     <>
@@ -233,13 +242,12 @@ function CreatePost({ onClose }) {
           </button>
         </div>
 
-         
-
         <div className="postedFilesContainer">
           <div className="postedFiles">
             {postedFiles.map((post, postIndex) => (
               <div key={postIndex} className="postedFilePreview">
                 <p>{post.content}</p>
+                <p className="timestamp">{post.timestamp}</p>
                 {post.files.map((fileUrl, fileIndex) => (
                   <div key={fileIndex} className="filePreview">
                     {fileUrl.endsWith('.mp4') ? (  
@@ -262,3 +270,4 @@ function CreatePost({ onClose }) {
 }
 
 export default CreatePost;
+

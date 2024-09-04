@@ -1,3 +1,4 @@
+
 .createPost {
     margin: 0 auto;  
     position: absolute;
@@ -207,5 +208,9 @@
     overflow-x: auto; 
     margin-left: 45px; 
 }
- 
 
+.timestamp {
+    color: gray;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
