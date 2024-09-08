@@ -1,6 +1,6 @@
 import React from "react";
-import { DBCourses } from "../components";
+import { DBCourses, RightSidebar } from "../components";
 
 export default function TestingPage() {
-  return <div></div>;
+  return <div><RightSidebar></RightSidebar></div>;
 }

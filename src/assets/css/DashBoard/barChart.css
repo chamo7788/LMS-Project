@@ -3,7 +3,7 @@
     width: 500px;
     height: auto;
     border-radius: 10px;
-    background: #9bdee4;
+    background-color: rgba(120, 191, 245, 0.476);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     padding-bottom: 25px;
@@ -11,7 +11,7 @@
 }
 
 .chart {
-    background: #bbe8ea;
+    background: #e7ecec;
     padding: 7px 10px 0px 8px;
     border-radius: 10px;
     font-size: larger;
@@ -22,7 +22,7 @@
 }
 
 .bar {
-    fill: #8883d8;
+    fill: var(--border-blue);
 }
 
 /* this is used for full page */
@@ -30,8 +30,8 @@
     display: flex;
     justify-content: space-between;
     padding-top: 5%;
-    padding-left: 7%;
-    padding-right: 10%;
+    padding-left: 160px;
+    padding-right: 7%;
 }
 
 @media (max-width:1395px) {

@@ -23,8 +23,19 @@ export function DBCoursesCard({
           <p className="dbcard-subtitle">{subtitle}</p>
         </div>
         <div className="compelationbar">
-          <p>{percentageComplete}%</p>
-          <div className="complete"></div>
+          <div className="completionbar-container">
+            <div
+              className="completionbar-fill"
+              style={{
+                width: `${percentageComplete}%`,
+                backgroundColor: percentageComplete == 100 ? '#4caf50' : '#6e99fd',
+              }}
+            >
+            </div>
+            <span className="completionbar-text">
+              {percentageComplete == 100 ? "Completed" : `${percentageComplete}%`}
+            </span>
+          </div>
         </div>
       </div>
     </Link>

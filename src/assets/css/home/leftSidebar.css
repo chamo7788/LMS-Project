@@ -1,16 +1,24 @@
 .main_sidebar {
     position: fixed;
-    background-color: var(--blue);
+    left: 0;
+    background-color: var(--bluenav);
     top: 60px;
     bottom: 73px;
     width: 17em;
     color: var(--white);
-    padding-top: 2em;
+    padding-top: 3.1em;
+    overflow-y: auto;
     border-top: 1px solid #fff;
-    transition: width .2s;  
+    transition: width .2s;
 }
 
-.list{
+.main_sidebar.pinned {
+    left: -188px;
+    transition: left .3s;
+    /* Adjust as needed */
+}
+
+.list {
     position: relative;
     height: 3.8em;
     top: 5px;
@@ -23,27 +31,50 @@
     transition: display 3s;
 }
 
-.btn{
+.sidebar-pin-button {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    background-color: var(--bluenav);
+    color: #45547ae8;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 2em;
+    transition: right 0.3s;
+    border-bottom: 1px solid #fff;
+    z-index: 5;
+    transition: background-color .20s;
+}
+
+.sidebar-pin-button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.btn {
     display: flex;
     font-size: 1.5em;
 
 }
 
-.btn-title{
+.btn-title {
     display: inline;
+    color: #45547ae8;
 }
 
-.list:hover{
-    background-color: rgba(255, 255, 255, .1);
-    transition:  background-color .2s;
+.list:hover {
+    background-color: rgb(255, 255, 255);
+    transition: background-color .2s;
 }
 
-.btn span i{
+.btn span i {
     display: inline-block;
     width: 3em;
+    color: #45547ae8;
 }
 
-.web-support{
+.web-support {
     position: fixed;
     bottom: 0;
     height: 73px;
@@ -52,32 +83,39 @@
     padding: 2em;
     border-top: .5px solid #fff;
     z-index: 10;
-    background-color: var(--blue);
+    background-color: var(--bluenav);
     padding-left: 5em;
+    color: #45547ae8;
 }
 
 @media (max-width: 1395px) {
     .main_sidebar {
-      left: 0;
-      width: 4em;
-      bottom: 0;
+        left: 0;
+        width: 4em;
+        bottom: 0;
     }
-    .btn-title{
+
+    .btn-title {
         display: none;
     }
-    .list{
+
+    .list {
         padding: 1em 1.2em;
     }
-    .web-support{
+
+    .web-support {
         display: none;
     }
-    .btn span i{
+
+    .btn span i {
         width: 2em;
     }
-    .list:hover .btn span{
+
+    .list:hover .btn span {
         display: inline-flex;
     }
-    .list:hover .btn-title{
+
+    .list:hover .btn-title {
         position: relative;
         display: block;
         background-color: rgba(54, 52, 59, 0.3);
@@ -93,22 +131,23 @@
 }
 
 @media (max-width: 768px) {
-    .main_sidebar{
+    .main_sidebar {
         top: 40px;
     }
 }
 
 @media (max-height:500px) {
-    .main_sidebar{
+    .main_sidebar {
         overflow-y: auto;
     }
 }
 
 @media (max-height:585px) {
-    .web-support{
+    .web-support {
         display: none;
     }
+
     .main_sidebar {
         bottom: 0;
-      }
+    }
 }
