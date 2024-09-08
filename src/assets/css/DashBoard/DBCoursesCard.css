@@ -3,7 +3,7 @@
     width: 220px;
     height: 270px;
     border-radius: 10%;
-    margin-left: 20px;
+    margin-left: 45px;
     cursor: pointer;
 }
 
@@ -57,30 +57,44 @@
     margin-top: 10%;
 }
 
-.compelationbar {
-    position: relative;
-    margin-left: 2em;
-    bottom: 20px;
-    height: 1em;
-    background-color: aliceblue;
-    font-size: 0.5em;
-    width: 193px;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.complete {
+.completionbar {
     position: absolute;
-    background-color: aqua;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 1px;
-    height: 1em;
-    border-radius: 15px;
+    bottom: 2%;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
 }
 
-.compelationbar p {
+/* Wrapper for the progress bar */
+.completionbar-container {
     position: relative;
-    z-index: 5;
+    width: 90%;
+    background-color: #e0e0df;
+    /* Light grey background */
+    border-radius: 10px;
+    height: 8px;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-left: 5%;
+}
+
+/* Filling part of the progress bar */
+.completionbar-fill {
+    /* background-color: #6e99fd; */
+    /* Blue progress color */
+    height: 100%;
+    transition: width 0.5s ease;
+    /* Smooth transition */
+}
+
+.completionbar-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-size: 7px;
+    /* Text color inside the bar */
+    font-weight: bold;
+    z-index: 2;
 }

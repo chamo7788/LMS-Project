@@ -1,4 +1,4 @@
-.rightsidebar{
+.rightsidebar {
     position: fixed;
     right: -250px;
     top: 83px;
@@ -13,7 +13,8 @@
 }
 
 .rightsidebar.pinned {
-    right: 0; /* Adjust as needed */
+    right: 0;
+    /* Adjust as needed */
 }
 
 .pin-button {
@@ -21,7 +22,7 @@
     left: 0px;
     top: 5px;
     background-color: var(--blue);
-    
+
     color: var(--white);
     border: none;
     cursor: pointer;
@@ -34,11 +35,11 @@
     transition: background-color .20s;
 }
 
-.pin-button:hover{
+.pin-button:hover {
     background-color: rgba(255, 255, 255, .1);
 }
 
-.rightsidebar-Items{
+.rightsidebar-Items {
     position: relative;
     height: auto;
     top: 5px;
@@ -49,45 +50,45 @@
     border-radius: 5px;
 }
 
-.rightsidebar-Items:hover{
+.rightsidebar-Items:hover {
     background-color: rgba(255, 255, 255, .1);
 }
 
-.sidebar-Item-title{
+.sidebar-Item-title {
     display: flex;
     font-size: 1.5em;
     justify-content: space-between;
     cursor: pointer;
 }
 
-.sidebar-Item-title span i{
+.sidebar-Item-title span i {
     display: inline-block;
     width: 2em;
 }
 
-.sidebar-Item-title .toggle-btn{
+.sidebar-Item-title .toggle-btn {
     transition: transform .3s;
 }
 
-.rightsidebar-Items.open > .sidebar-Item-title .toggle-btn{
+.rightsidebar-Items.open>.sidebar-Item-title .toggle-btn {
     transform: rotate(180deg);
 }
 
-.sidebar-Item-subtitle{
+.sidebar-Item-subtitle {
     padding-top: .25em;
     height: 0;
     overflow: hidden;
 }
 
-.rightsidebar-Items.open > .sidebar-Item-subtitle{
-    height: auto ;
+.rightsidebar-Items.open>.sidebar-Item-subtitle {
+    height: auto;
 }
 
-.sidebar-Item-subtitle{
+.sidebar-Item-subtitle {
     font-size: .8em;
 }
 
-.web-support{
+.rweb-support {
     position: fixed;
     bottom: 0;
     height: 73px;

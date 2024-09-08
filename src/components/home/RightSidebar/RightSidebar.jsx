@@ -20,7 +20,7 @@ export function RightSidebar() {
       {items.map((item, index) => (
         <RightSidebarItems key={index} item={item} />
       ))}
-      <div className="web-support">
+      <div className="rweb-support">
         <span>
           <a href="jkdjnjn">web support</a>
           <br></br>

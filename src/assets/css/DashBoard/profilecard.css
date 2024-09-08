@@ -1,5 +1,5 @@
 .card {
-  background-color: #1382c7;
+  background-color: var(--border-blue);
   color: black;
   padding-right: 20px;
   padding-left: 20px;
@@ -7,8 +7,8 @@
   width: 790px;
   height: 280px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 115px;
-  margin-left: 300px;
+  margin-top: 145px;
+  margin-left: 350px;
 }
 
 .profile-section {
