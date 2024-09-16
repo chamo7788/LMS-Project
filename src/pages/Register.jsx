@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../assets/css/register.css";
 
 export default function Register() {
@@ -8,12 +9,13 @@ export default function Register() {
   const passRef = useRef();
   const rePassRef = useRef();
   const ageRef = useRef();
-  const studentIdRef = useRef();
   const teacherIdRef = useRef();
 
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const [userType, setUserType] = useState("student"); // State variable to track selected user type
+  const [userType, setUserType] = useState("student");
+
+  const navigate = useNavigate();
 
   const clearInputs = () => {
     if (emailRef?.current) emailRef.current.value = "";
@@ -22,11 +24,10 @@ export default function Register() {
     if (passRef?.current) passRef.current.value = "";
     if (rePassRef?.current) rePassRef.current.value = "";
     if (ageRef?.current) ageRef.current.value = "";
-    if (studentIdRef?.current) studentIdRef.current.value = "";
     if (teacherIdRef?.current) teacherIdRef.current.value = "";
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
@@ -36,31 +37,43 @@ export default function Register() {
       return;
     }
 
-    let creds = {
+    // Generate a random avatar using DiceBear API based on user's name
+    const avatarUrl = `https://avatars.dicebear.com/api/initials/${nameRef.current.value}.svg`;
+
+    const creds = {
+      firstName: nameRef.current.value,
+      lastName: lastNameRef.current.value,
       email: emailRef.current.value,
       password: passRef.current.value,
+      age: userType === "student" ? ageRef.current.value : null,
+      teacherId: userType === "teacher" ? teacherIdRef.current.value : null,
+      userType: userType,
+      avatar: avatarUrl,  // Add avatar URL
     };
 
-    if (userType === "student") {
-      creds = {
-        ...creds,
-        firstName: nameRef.current.value,
-        lastName: lastNameRef.current.value,
-        age: ageRef.current.value,
-      };
-    } else {
-      creds = {
-        ...creds,
-        firstName: nameRef.current.value,
-        lastName: lastNameRef.current.value,
-        teacherId: teacherIdRef.current.value,
-      };
+    try {
+      const response = await fetch("http://localhost:3000/user/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(creds),
+      });
+
+      const data = await response.json();
+      if (response.ok) {
+        console.log("Registration successful", data);
+        clearInputs();
+        navigate("/login");  // Redirect to Login page
+      } else {
+        setError(data.message || "Registration failed");
+      }
+    } catch (error) {
+      setError("Failed to register. Please try again.");
+      console.error("Error:", error);
+    } finally {
+      setLoading(false);
     }
-
-    console.log("register", creds);
-
-    clearInputs();
-    setLoading(false);
   };
 
   return (
@@ -70,6 +83,8 @@ export default function Register() {
         <h2 className="heading">Register</h2>
         <form onSubmit={handleSubmit} className="form">
           {error && <span className="error-msg">{error}</span>}
+
+          {/* Radio Buttons */}
           <label htmlFor="selectstudent" className="selectstudent">STUDENT</label>
           <input
             type="radio"
@@ -88,6 +103,8 @@ export default function Register() {
             checked={userType === "teacher"}
             onChange={() => setUserType("teacher")}
           />
+
+          {/* Student/Teacher Fields */}
           {userType === "student" ? (
             <>
               <input required ref={nameRef} type="text" placeholder="First Name" />
@@ -107,9 +124,12 @@ export default function Register() {
               <input required ref={rePassRef} type="password" placeholder="Re-type Password" />
             </>
           )}
+
+          {/* Submit Button */}
           <button disabled={loading} type="submit">
             {loading ? "Loading..." : "Register"}
           </button>
+
           <span className="link">
             <a href="/login">Already have an account? Login here.</a>
           </span>
