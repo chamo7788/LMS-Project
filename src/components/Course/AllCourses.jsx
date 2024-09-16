@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../assets/css/Course/allCourses.css";
 import { CourseCard } from "./CourseCard";
-import coursesData from "../../data/courses.json"; // Adjust the path according to your project structure
 import { Footer } from "../home/Footer/Footer.jsx";
 import { ScrollToTopButton } from '../Foram/scroll-to-top';
 
@@ -11,12 +10,10 @@ export function AllCourses() {
 
     useEffect(() => {
         const loadCourses = async () => {
-            const coursesWithImages = await Promise.all(coursesData.map(async (course) => {
-                const image = await import(`../../assets/images/${course.image}`).then(module => module.default);
-                return { ...course, image };
-            }));
+            const response = await fetch('http://localhost:3000/courses'); // Replace with your NestJS backend URL if different
+            const coursesData = await response.json();
 
-            const groupedCourses = coursesWithImages.reduce((acc, course) => {
+            const groupedCourses = coursesData.reduce((acc, course) => {
                 if (!acc[course.subject]) acc[course.subject] = [];
                 acc[course.subject].push(course);
                 return acc;
@@ -65,10 +62,8 @@ export function AllCourses() {
                         )}
                     </div>
                 ))}
-
             </div>
             <ScrollToTopButton />
-
             <Footer />
         </>
     );
