@@ -92,6 +92,14 @@ export function QuestionCreatePost({ onClose }) {
                         placeholder="Add your title"
                         className="question-title-input"
                     />
+                    <p>Subject</p>
+                    <select className="question-subject-select">
+                        <option value="1">Select the subjecct</option>
+                        <option value="2">Subject 1</option>
+                        <option value="3">Subject 2</option>
+                        <option value="4">Subject 3</option>
+                        <option value="5">Subject 4</option>
+                    </select>
                     <p>Question/Idea</p>
                     <textarea
                         value={question}
