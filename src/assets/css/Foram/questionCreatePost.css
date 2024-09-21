@@ -86,7 +86,7 @@
     width: 290px;
     height: auto;
     margin-left: 640px;
-    margin-top: -270px;
+    margin-top: -280px;
 }
 
 .question-image-dropzone-top{
@@ -212,4 +212,20 @@
     background-color: #0e0e0e68;
     z-index: 5;
     opacity: 100%;
+}
+.question-subject-select{
+    position: relative;
+    width: 620px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    text-align: center;
+    appearance: none;
+    border: none;
+    outline: none;
+    border-bottom: .2em solid #1e8ee9e1;
+    background: rgba(30, 67, 233, 0.2);
+    border-radius: .2em .2em 0 0;
+    padding: .4em;
+    color: #E91E63;
 }
