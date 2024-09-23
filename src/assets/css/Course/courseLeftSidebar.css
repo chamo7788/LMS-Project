@@ -22,15 +22,21 @@
     color: #333;
     font-size: 16px;
     transition: background-color 0.3s;
+    border-bottom: 1px solid #000000; /* Add underline */
 }
 
 .sidebar-item:hover {
     background-color: #e0f7fa;
+    border-bottom-color: #00796b; /* Change underline color on hover */
 }
 
 .sidebar-icon {
     margin-right: 10px;
     font-size: 20px;
+}
+
+.completed {
+    color: green; /* Change tick icon color for completed courses */
 }
 
 .sidebar-heading {
@@ -40,6 +46,8 @@
     color: #555;
     text-transform: uppercase;
     letter-spacing: 1px;
+    border-bottom: 2px solid #00796b; /* Underline the heading */
+    padding-bottom: 5px;
 }
 
 .help-tab {
@@ -54,11 +62,12 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    border-top: 1px solid #ccc; /* Add underline above Help tab */
 }
 
 .help-tab:hover {
-  
-    background-color: #e0f7fa;
+    background-color: #07191b;
+    border-top-color: #00796b; /* Change underline color on hover */
 }
 
 .help-tab .sidebar-icon {
