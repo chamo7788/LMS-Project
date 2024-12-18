@@ -13,7 +13,7 @@ import CollectionsIcon from '@mui/icons-material/Collections';
 import TagFacesIcon from '@mui/icons-material/TagFaces';
 
 function CreatePost({ onClose }) {
-  const [postedFiles, setPostedFiles] = useState([]);  
+  const [postedFiles, setPostedFiles] = useState([]);
   const [showPrivacyOptions, setShowPrivacyOptions] = useState(false);
   const [selectedPrivacy, setSelectedPrivacy] = useState('Friend');
   const [postContent, setPostContent] = useState('');
@@ -26,7 +26,7 @@ function CreatePost({ onClose }) {
     if (confirmPost) {
       const now = new Date();
       const timestamp = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
-      
+
       alert('Posted this post!');
 
       setPostedFiles(prevFiles => [
@@ -37,10 +37,10 @@ function CreatePost({ onClose }) {
       setPostContent('');
       setSelectedFiles([]);
       setFileUrls([]);
-      setIsPosted(true);  
-      
+      setIsPosted(true);
+
       setTimeout(() => {
-        setIsPosted(false);  
+        setIsPosted(false);
       }, 2000);
     }
   };
@@ -105,10 +105,10 @@ function CreatePost({ onClose }) {
         <div className="topic">
           <button className='clossicon1'>
             <span className='clossicon' onClick={onClose}> Close </span>
-          </button> 
+          </button>
           <span className='header'>Create Post</span>
           <button
-            className={`PostButton ${isPosted ? 'posted' : ''}`}  
+            className={`PostButton ${isPosted ? 'posted' : ''}`}
             onClick={handlePostClick}
           >
             {isPosted ? 'Posted' : 'Post'}
@@ -116,7 +116,7 @@ function CreatePost({ onClose }) {
         </div>
         <div className="createTop">
           <img src={dp} alt="" className="createImage" />
-          <span className="createUserName">Learn Hub</span> 
+          <span className="createUserName">Learn Hub</span>
         </div>
         <div className="createTag">
           <button className='fButton' onClick={handlePrivacyClick}>
@@ -189,21 +189,21 @@ function CreatePost({ onClose }) {
           )}
         </div>
         <div className="createCenter">
-          <textarea 
-            placeholder="What's on your mind..?" 
-            rows="4" 
-            cols="70"  
-            className="addPostInput2" 
-            value={postContent}  
-            onChange={(e) => setPostContent(e.target.value)}  
+          <textarea
+            placeholder="What's on your mind..?"
+            rows="4"
+            cols="70"
+            className="addPostInput2"
+            value={postContent}
+            onChange={(e) => setPostContent(e.target.value)}
           />
         </div>
 
         <div className="uploadedFilesContainer">
           <div className="uploadedFiles">
             {fileUrls.map((fileUrl, index) => (
-              <div key={index} className="filePreview">
-                {fileUrl.endsWith('.mp4') ? (  
+              <div key={index} className="filePreview1">
+                {fileUrl.endsWith('.mp4') ? (
                   <video controls className="fileVideo">
                     <source src={fileUrl} type="video/mp4" />
                     Your browser does not support the video tag.
@@ -221,23 +221,23 @@ function CreatePost({ onClose }) {
             type="file"
             id="file-input"
             style={{ display: 'none' }}
-            accept="image/*,video/*" 
+            accept="image/*,video/*"
             multiple
             onChange={handleFileChange}
           />
           <button onClick={handleAddPhotoClick}>
             <AddAPhotoIcon htmlColor='white' className='PIcon' />
-          </button> 
+          </button>
           <button>
             <TagIcon htmlColor='blue' className='TIcon'/>
           </button>
-          <button> 
+          <button>
             <TagFacesIcon htmlColor='orange' className='FIcon'/>
           </button>
-          <button> 
+          <button>
             <LocationIcon htmlColor='red' className='LIcon'/>
           </button>
-          <button> 
+          <button>
             <CollectionsIcon htmlColor='green' className='CIcon'/>
           </button>
         </div>
@@ -249,8 +249,8 @@ function CreatePost({ onClose }) {
                 <p>{post.content}</p>
                 <p className="timestamp">{post.timestamp}</p>
                 {post.files.map((fileUrl, fileIndex) => (
-                  <div key={fileIndex} className="filePreview">
-                    {fileUrl.endsWith('.mp4') ? (  
+                  <div key={fileIndex} className="filePreview2">
+                    {fileUrl.endsWith('.mp4') ? (
                       <video controls className="fileVideo">
                         <source src={fileUrl} type="video/mp4" />
                         Your browser does not support the video tag.
@@ -270,4 +270,3 @@ function CreatePost({ onClose }) {
 }
 
 export default CreatePost;
-
